@@ -1,0 +1,131 @@
+# ASIC-RAG-CHIMERA Configuration
+# ================================
+
+# System Configuration
+system:
+  name: "ASIC-RAG-CHIMERA"
+  version: "0.1.0"
+  log_level: "INFO"
+  
+# ASIC Simulator Configuration
+asic_simulator:
+  # Number of parallel hash computation lanes
+  num_lanes: 256
+  # Hash computation batch size
+  batch_size: 1024
+  # Temporary key expiration time (seconds)
+  key_expiration_seconds: 30
+  # Enable Merkle tree verification
+  enable_merkle_verification: true
+  # Index cache size (number of entries)
+  index_cache_size: 100000
+  
+# Encryption Configuration
+encryption:
+  # Master key derivation iterations (PBKDF2)
+  kdf_iterations: 100000
+  # AES key size in bits
+  aes_key_size: 256
+  # GCM nonce size in bytes
+  gcm_nonce_size: 12
+  # Salt size in bytes
+  salt_size: 32
+  
+# RAG System Configuration
+rag_system:
+  # Storage path for encrypted blocks
+  storage_path: "./data/encrypted_blocks"
+  # Maximum block size in bytes
+  max_block_size: 1048576  # 1MB
+  # Enable block chain linking
+  enable_chain_linking: true
+  # Index storage type: "memory" or "lmdb"
+  index_storage: "lmdb"
+  # Maximum search results
+  max_search_results: 10
+  # Relevance score threshold (0.0 - 1.0)
+  relevance_threshold: 0.5
+  
+# Document Processing Configuration
+document_processing:
+  # Supported file extensions
+  supported_extensions:
+    - ".txt"
+    - ".md"
+    - ".pdf"
+    - ".docx"
+    - ".json"
+  # Chunk size for large documents (characters)
+  chunk_size: 4096
+  # Chunk overlap (characters)
+  chunk_overlap: 512
+  # Maximum keywords per document
+  max_keywords: 50
+  # Minimum keyword length
+  min_keyword_length: 3
+  
+# CHIMERA Integration Configuration
+chimera:
+  # Enable GPU acceleration
+  enable_gpu: true
+  # GPU device ID (-1 for CPU)
+  device_id: 0
+  # Texture memory size (MB)
+  texture_memory_mb: 512
+  # Hash computation threads per block
+  threads_per_block: 256
+  # Enable physics-based computation
+  enable_physics_compute: false
+  
+# LLM Configuration
+llm:
+  # Model name/path
+  model_name: "Qwen/Qwen3-0.6B"
+  # Device: "cuda", "cpu", "auto"
+  device: "auto"
+  # Maximum context length
+  max_context_length: 8192
+  # Maximum new tokens for generation
+  max_new_tokens: 512
+  # Temperature for generation
+  temperature: 0.7
+  # Top-p sampling
+  top_p: 0.9
+  # Enable 4-bit quantization
+  use_4bit: true
+  # Enable thinking mode (Qwen specific)
+  enable_thinking: true
+  # Trust remote code (required for some models)
+  trust_remote_code: true
+  
+# Benchmark Configuration
+benchmarks:
+  # Number of iterations for hash benchmarks
+  hash_iterations: 10000
+  # Number of queries for search benchmarks
+  search_queries: 1000
+  # Document counts to test
+  document_counts:
+    - 100
+    - 1000
+    - 10000
+    - 100000
+  # Enable memory profiling
+  memory_profiling: true
+  # Results output path
+  results_path: "./benchmarks/results"
+  
+# Audit Configuration
+audit:
+  # Enable audit logging
+  enabled: true
+  # Audit log path
+  log_path: "./data/audit.log"
+  # Maximum log size before rotation (MB)
+  max_log_size_mb: 100
+  # Number of backup logs to keep
+  backup_count: 5
+  # Log all queries
+  log_queries: true
+  # Log all access events
+  log_access: true
