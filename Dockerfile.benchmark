@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+LABEL maintainer="Francisco Angulo <contact@example.com>"
+LABEL description="ASIC-RAG-CHIMERA Benchmark Container"
+
+WORKDIR /app
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy source code
+COPY . .
+
+# Run tests and benchmarks
+CMD ["sh", "-c", "pytest tests/ -v && python benchmarks/hash_performance.py && python benchmarks/search_latency.py"]
