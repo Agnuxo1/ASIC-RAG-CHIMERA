@@ -1,0 +1,37 @@
+{
+  "schema_version": "6.0",
+  "version_rolling": true,
+  "proofs": [
+    {
+      "proof_id": "proof_1766933069980",
+      "batch_id": "BATCH-1766933053176",
+      "job_id": "med000001",
+      "timestamp": 1766933069.9804208,
+      "job_sent_at": 1766933053.27757,
+      "share_received_at": 1766933069.9804208,
+      "latency_s": 16.702850818634033,
+      "medical_merkle_root": "bd311e124271becfb0d0a5a158bc007626621ec05176c84d137d2480ddd1d78c",
+      "records_sealed": 5,
+      "worker_name": "chimera",
+      "extranonce2": "07000000",
+      "ntime": "6951423d",
+      "nonce": "398200c0",
+      "version_bits": "0ed48000",
+      "coinb1": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1701014348494d4552412f",
+      "coinb2": "2f4d45442fffffffff0100f2052a01000000126a10415349432d5241472d4845414c54482100000000",
+      "extranonce1": "deadbeef",
+      "coinbase_hash": "81906810bef38266e8392db8829a587184d1822eb7da3cc744e5da022d0456a4",
+      "block_merkle_root": "81906810bef38266e8392db8829a587184d1822eb7da3cc744e5da022d0456a4",
+      "block_header_hex": "0080d40e121e31bdcfbe7142a1a5d0b07600bc58c01e62264dc8765180247d138cd7d1dd81906810bef38266e8392db8829a587184d1822eb7da3cc744e5da022d0456a43d425169ffff001dc0008239",
+      "block_hash_hex": "93b6ddc4144e759853c4a5f98ff30e2754f1c557449f937c93c66925bab74396",
+      "difficulty": 1,
+      "target_hex": "00000000ffff0000000000000000000000000000000000000000000000000000",
+      "nbits": 486604799,
+      "version_used": 248807424,
+      "hash_meets_target": false,
+      "verification_method": "failed",
+      "verification_error": "Hash > target (ratio: 2478272891.52)",
+      "estimated_hashes": 4294967296
+    }
+  ]
+}

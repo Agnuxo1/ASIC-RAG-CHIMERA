@@ -1,0 +1,10 @@
+{
+  "cv_mean": 0.9703292042690719,
+  "hist_entropy_mean": 0.7483371364887769,
+  "psd_peak_hz_error_hz_mean": 1.3335616946024702,
+  "psd_peak_hz_iqr_hz": 1.1917631917631917,
+  "psd_peak_hz_median": 2.3481781376518214,
+  "psd_peak_q_mean": 21.400000000000038,
+  "psd_peak_snr_db_mean": 8.947018778035208,
+  "schema_version": "0.1"
+}

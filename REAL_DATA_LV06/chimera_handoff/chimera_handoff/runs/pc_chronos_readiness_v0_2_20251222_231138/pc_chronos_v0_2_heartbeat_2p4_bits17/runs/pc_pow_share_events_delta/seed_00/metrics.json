@@ -1,0 +1,33 @@
+{
+  "chronos": {
+    "cv_mean": 1.0053525228001707,
+    "hist_entropy_mean": 0.6514224081382849,
+    "psd_peak_hz_error_hz_mean": 1.201381126312884,
+    "psd_peak_hz_iqr_hz": 2.776574735533277,
+    "psd_peak_hz_median": 2.444232238349885,
+    "psd_peak_q_mean": 25.297619047619058,
+    "psd_peak_snr_db_mean": 8.252889328522542
+  },
+  "chronos_only": true,
+  "diagnostics": {
+    "achieved": {
+      "h_saturation": {
+        "frac_at_0": 0.0,
+        "frac_at_top": 0.0
+      }
+    },
+    "sigma": 0.0,
+    "top": 0.0
+  },
+  "pred_mse": 0.0,
+  "protocol_ref": {
+    "run_kind": "pc_chronos_v0_2",
+    "seed": 0
+  },
+  "rollout": {
+    "mse_last": 0.0,
+    "mse_mean": 0.0
+  },
+  "schema_version": "0.1",
+  "source_id": "pc_pow_share_events_delta"
+}

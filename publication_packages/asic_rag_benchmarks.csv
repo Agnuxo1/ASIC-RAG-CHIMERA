@@ -1,0 +1,7 @@
+category,operation,mean_ms,p95_ms,qps,value,speedup
+search_latency,single_tag_lookup,0.02,0.04,51319.0,,
+search_latency,and_search_3_tags,0.04,0.06,24373.0,,
+search_latency,or_search_3_tags,1.8,2.25,556.0,,
+search_latency,merkle_verification,42.8,48.5,23.0,,
+search_latency,full_query_pipeline,47.1,51.9,21.0,,
+hash_performance,sha256_throughput,,,,"725,358 H/s",1.10x

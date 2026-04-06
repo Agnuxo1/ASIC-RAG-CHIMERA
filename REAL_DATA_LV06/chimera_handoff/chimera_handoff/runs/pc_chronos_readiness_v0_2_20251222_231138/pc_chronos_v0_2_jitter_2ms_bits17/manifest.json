@@ -1,0 +1,1045 @@
+{
+  "counts": {
+    "n_events_total_across_seeds": 128
+  },
+  "files": [
+    {
+      "bytes": 861,
+      "path": "preregistered_metrics.json",
+      "sha256": "54762e46295fcb1ed1a12fd67fa8c9ec08fb89c8db86006677c9f79957c4d0d8"
+    },
+    {
+      "bytes": 919,
+      "path": "protocol.json",
+      "sha256": "a8e7c92fc1df1bdb5b8c66fdf3e96a01612389e7263ac38900ce9ba52d7acce3"
+    },
+    {
+      "bytes": 642,
+      "path": "raw/seed_00/base/attempt_rate.csv",
+      "sha256": "d13dfca67b1320a4972cdadbe422101c1527ea0b5f2eea2c16158afd64bae89d"
+    },
+    {
+      "bytes": 11550,
+      "path": "raw/seed_00/base/chronos_metrics.csv",
+      "sha256": "7aa055745bc1f52ce6bebb9d42abdfa564e5266b26b2a87d2590f7cce2fab570"
+    },
+    {
+      "bytes": 1059,
+      "path": "raw/seed_00/base/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 328,
+      "path": "raw/seed_00/base/chronos_summary.json",
+      "sha256": "8fec7c08420be9ce1eddbd714b8e500bb39583044c5bfeac5856a5234223d9cb"
+    },
+    {
+      "bytes": 73,
+      "path": "raw/seed_00/base/counts.json",
+      "sha256": "0244a0355152df73cc22049e35c806d0d66a4d11c372cea0f6c9ab2081b7b688"
+    },
+    {
+      "bytes": 2153,
+      "path": "raw/seed_00/base/deltas.csv",
+      "sha256": "27da2238d5a3c0dcf0a14b06543501cffe8b0afb2a75af7697d702e58e21ef38"
+    },
+    {
+      "bytes": 9479,
+      "path": "raw/seed_00/base/events.csv",
+      "sha256": "e816e9cfd48e0bf857b27ded205994a47ec45902efc3e7cf4b90ec74bca12488"
+    },
+    {
+      "bytes": 416,
+      "path": "raw/seed_00/base/protocol.json",
+      "sha256": "5ba3ae35b2f59792051c52aeccdba8bb12820feb64b0df4f215e903fae2b6211"
+    },
+    {
+      "bytes": 11518,
+      "path": "raw/seed_00/surrogate_blockshuffle/chronos_metrics.csv",
+      "sha256": "fe0693bbe98fa86d1a80636d1627d6c256a99384ce20874c1e827b77550368e1"
+    },
+    {
+      "bytes": 1059,
+      "path": "raw/seed_00/surrogate_blockshuffle/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 329,
+      "path": "raw/seed_00/surrogate_blockshuffle/chronos_summary.json",
+      "sha256": "4f77d5f5704f42d73bc056becabd230b1e5b25f25d5f38a8466a7185f2dc8681"
+    },
+    {
+      "bytes": 2176,
+      "path": "raw/seed_00/surrogate_blockshuffle/deltas.csv",
+      "sha256": "d9828ef0d2b40a98401d849e713123461e9bcf7d3bf51fd8b62d2b137d8c6e80"
+    },
+    {
+      "bytes": 14144,
+      "path": "raw/seed_00/surrogate_blockshuffle/events.csv",
+      "sha256": "0a757070df1781d996eabc0ef206302c063def8d3e82898b7d0304acb3bab2bf"
+    },
+    {
+      "bytes": 197,
+      "path": "raw/seed_00/surrogate_blockshuffle/surrogate_fingerprint.json",
+      "sha256": "2c0c2d851de927e721f71ac1edb8df8ed27db6d1e3d4ed7edecca16becb44e1b"
+    },
+    {
+      "bytes": 11467,
+      "path": "raw/seed_00/surrogate_iaaft/chronos_metrics.csv",
+      "sha256": "6ffa80470948e8a1b717d48ce9658f3969677da03596dea3b5b8bd9e7e9282eb"
+    },
+    {
+      "bytes": 1059,
+      "path": "raw/seed_00/surrogate_iaaft/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 329,
+      "path": "raw/seed_00/surrogate_iaaft/chronos_summary.json",
+      "sha256": "91407321bfff78b03ad69a9fa7492dd7ce5ed88b4b66e48fcc550bf3ec623da5"
+    },
+    {
+      "bytes": 2127,
+      "path": "raw/seed_00/surrogate_iaaft/deltas.csv",
+      "sha256": "b009fb7e7ca054ebc204820e3b3676bb054f848c0138c21a052e4bea6bdb6ab7"
+    },
+    {
+      "bytes": 13464,
+      "path": "raw/seed_00/surrogate_iaaft/events.csv",
+      "sha256": "34c5c2419fe94590a75eedc39c70b198304bc1217d5ee6811af48f53ef96ac20"
+    },
+    {
+      "bytes": 190,
+      "path": "raw/seed_00/surrogate_iaaft/surrogate_fingerprint.json",
+      "sha256": "ddb463ae889380205abe2806f4b2757aa91199f81fd9dc8f1e63b167dd65b133"
+    },
+    {
+      "bytes": 11119,
+      "path": "raw/seed_00/surrogate_phase/chronos_metrics.csv",
+      "sha256": "c9d8d9759af96191c5195c924be3427dd47afff46dedb6ce04cda6127f89d40e"
+    },
+    {
+      "bytes": 1059,
+      "path": "raw/seed_00/surrogate_phase/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 329,
+      "path": "raw/seed_00/surrogate_phase/chronos_summary.json",
+      "sha256": "7895631d13ec9874c23c52a7de3ed2cc2a48757365c461d27822164f55e9e7f5"
+    },
+    {
+      "bytes": 2230,
+      "path": "raw/seed_00/surrogate_phase/deltas.csv",
+      "sha256": "15f00a373608fab6338d9189499718b548b534903715722bc5115331c0f114e8"
+    },
+    {
+      "bytes": 12308,
+      "path": "raw/seed_00/surrogate_phase/events.csv",
+      "sha256": "a62748c995c50d2b37741e088fc5a989241ba2ff57e37e8aa3feb5e9cc46a006"
+    },
+    {
+      "bytes": 190,
+      "path": "raw/seed_00/surrogate_phase/surrogate_fingerprint.json",
+      "sha256": "89345ec9709caed3755ea1774027c50368bd42696c0deb091de807ab20bf7a83"
+    },
+    {
+      "bytes": 11544,
+      "path": "raw/seed_00/surrogate_shuffle/chronos_metrics.csv",
+      "sha256": "57e635c2481f9e2fc9768a4dae50dc6759a6d02280c80dfb398f66ee8b2a41ff"
+    },
+    {
+      "bytes": 1059,
+      "path": "raw/seed_00/surrogate_shuffle/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 315,
+      "path": "raw/seed_00/surrogate_shuffle/chronos_summary.json",
+      "sha256": "47e22a2a2ee9ce4747f50d615bf32f9b1201f92b72efabe57a244a92828b8531"
+    },
+    {
+      "bytes": 2127,
+      "path": "raw/seed_00/surrogate_shuffle/deltas.csv",
+      "sha256": "f9f25ec917f8b0427f6fcbabfd64215acb1100287fd209cb6e7ac181ee19ee96"
+    },
+    {
+      "bytes": 12444,
+      "path": "raw/seed_00/surrogate_shuffle/events.csv",
+      "sha256": "cf5fe7cf6d10682d69d84b8f7b0c3f44727419a56af26bfae07776f845be5970"
+    },
+    {
+      "bytes": 192,
+      "path": "raw/seed_00/surrogate_shuffle/surrogate_fingerprint.json",
+      "sha256": "59ccb9577614c7afb5e3a0784cc6253a54d9033546d244069046e5a56331efa5"
+    },
+    {
+      "bytes": 642,
+      "path": "raw/seed_01/base/attempt_rate.csv",
+      "sha256": "0ba229bcb203747b951b0b1d519b7e9342ce353e4e375f4ff184437feec819a7"
+    },
+    {
+      "bytes": 9907,
+      "path": "raw/seed_01/base/chronos_metrics.csv",
+      "sha256": "b8d3e8f6aa1bcaf1d4deccb67c5495c5b62a5bf25298e358061d10475c8ed772"
+    },
+    {
+      "bytes": 1071,
+      "path": "raw/seed_01/base/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 328,
+      "path": "raw/seed_01/base/chronos_summary.json",
+      "sha256": "d7df248c1e657b4894ad0fd70e17630671d35f2b6796b8b1175265a197305077"
+    },
+    {
+      "bytes": 73,
+      "path": "raw/seed_01/base/counts.json",
+      "sha256": "7996d7e862b28308feb0673d26fbd8fec5a4ca4d9593bbf6362ab57115050e20"
+    },
+    {
+      "bytes": 1947,
+      "path": "raw/seed_01/base/deltas.csv",
+      "sha256": "d20cecd2e1b441c174ca23e0d46c2e4716c6c23776075014d7578b0a67d18b71"
+    },
+    {
+      "bytes": 8371,
+      "path": "raw/seed_01/base/events.csv",
+      "sha256": "e1e9a8385e0667e914d0a8f03c6c34e7a7cda3b048405a6b0057b584dbb994d8"
+    },
+    {
+      "bytes": 416,
+      "path": "raw/seed_01/base/protocol.json",
+      "sha256": "638ce21dc8ed4b3eb892ac7b00ada9c17efcd83ac3c978ffa16a0fb6a856299d"
+    },
+    {
+      "bytes": 9566,
+      "path": "raw/seed_01/surrogate_blockshuffle/chronos_metrics.csv",
+      "sha256": "26d047bd2f0cce09d2cd311854d36897fa80e056a1e37e6bfee1dc502db9f1cf"
+    },
+    {
+      "bytes": 1071,
+      "path": "raw/seed_01/surrogate_blockshuffle/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 312,
+      "path": "raw/seed_01/surrogate_blockshuffle/chronos_summary.json",
+      "sha256": "61def040aa314c8f1827c26b433bdc70bf4975e5bc66aa9d9b99c0660aa1f0b7"
+    },
+    {
+      "bytes": 1960,
+      "path": "raw/seed_01/surrogate_blockshuffle/deltas.csv",
+      "sha256": "dbbf508f1bcbd5ad50638aeea9931794bfed97be4a459ca97c8dec1c3f3d4c16"
+    },
+    {
+      "bytes": 12487,
+      "path": "raw/seed_01/surrogate_blockshuffle/events.csv",
+      "sha256": "852843a4ae3fa8619c5f1a1476c716a35c650b49263c3566ce3189431baa6116"
+    },
+    {
+      "bytes": 197,
+      "path": "raw/seed_01/surrogate_blockshuffle/surrogate_fingerprint.json",
+      "sha256": "ba9a66da20921d9b34c1954869a5ffceae3e975b8aa27058796fa07dece587dd"
+    },
+    {
+      "bytes": 9843,
+      "path": "raw/seed_01/surrogate_iaaft/chronos_metrics.csv",
+      "sha256": "b4ba314392582abf39911458b936f6bab8fd7f3a03071f6722922dd1c42c30ba"
+    },
+    {
+      "bytes": 1071,
+      "path": "raw/seed_01/surrogate_iaaft/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 324,
+      "path": "raw/seed_01/surrogate_iaaft/chronos_summary.json",
+      "sha256": "4ca461ca21940d6ef0f6891cb9b930dd1dd9d36ab197957817670e4cb84db8b5"
+    },
+    {
+      "bytes": 1863,
+      "path": "raw/seed_01/surrogate_iaaft/deltas.csv",
+      "sha256": "05b0d7399b5e0c034ddef686212c6f54d65e0eea46ca28070127f542593acf2e"
+    },
+    {
+      "bytes": 11887,
+      "path": "raw/seed_01/surrogate_iaaft/events.csv",
+      "sha256": "0a1a3132c12936675bfa6da69795cb5a9b09d19f041049b7556974197323da22"
+    },
+    {
+      "bytes": 190,
+      "path": "raw/seed_01/surrogate_iaaft/surrogate_fingerprint.json",
+      "sha256": "33d424ee14df3d5a836173231981ae5d1a378ed075d6459d8739d5a31c0467d2"
+    },
+    {
+      "bytes": 9842,
+      "path": "raw/seed_01/surrogate_phase/chronos_metrics.csv",
+      "sha256": "4b400e848610972c6b9ec1cea00ee3864051776ba24cbc3d0f89dcee340984c1"
+    },
+    {
+      "bytes": 1071,
+      "path": "raw/seed_01/surrogate_phase/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 327,
+      "path": "raw/seed_01/surrogate_phase/chronos_summary.json",
+      "sha256": "3f51d805e4045fb262825cfa970c61c3b2081bc54add2f788b9d87514b90e916"
+    },
+    {
+      "bytes": 1883,
+      "path": "raw/seed_01/surrogate_phase/deltas.csv",
+      "sha256": "a45b6712cb7a0a3f7f76741f3ca9416c2382dcec128d3980caaebc0244df3444"
+    },
+    {
+      "bytes": 10867,
+      "path": "raw/seed_01/surrogate_phase/events.csv",
+      "sha256": "82ef9f54838d5b16a4200dd59b79b0be15f082c054b4a2863b8fde7893f4e6ad"
+    },
+    {
+      "bytes": 190,
+      "path": "raw/seed_01/surrogate_phase/surrogate_fingerprint.json",
+      "sha256": "c2d298fee5210104785a9843af7abd47ffcec5e49b0136b85efc9ee87381f270"
+    },
+    {
+      "bytes": 9912,
+      "path": "raw/seed_01/surrogate_shuffle/chronos_metrics.csv",
+      "sha256": "addd79581fe2f68278fab30392cf8762ee76b92148dca1fd5f8e7384c3243aad"
+    },
+    {
+      "bytes": 1071,
+      "path": "raw/seed_01/surrogate_shuffle/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 327,
+      "path": "raw/seed_01/surrogate_shuffle/chronos_summary.json",
+      "sha256": "39f6fabd657c6b96387d1f1bee4c580b11d5859e849425381f24cdf6f0b61b2c"
+    },
+    {
+      "bytes": 1863,
+      "path": "raw/seed_01/surrogate_shuffle/deltas.csv",
+      "sha256": "74da53790dc74ded1cb0809932171a1b9c1db8ef931079d0d4f4006825867585"
+    },
+    {
+      "bytes": 10987,
+      "path": "raw/seed_01/surrogate_shuffle/events.csv",
+      "sha256": "62de33aa492922f49b4f15430bf7a50c38043ce05c3c6ae8fbacc377709d2c76"
+    },
+    {
+      "bytes": 192,
+      "path": "raw/seed_01/surrogate_shuffle/surrogate_fingerprint.json",
+      "sha256": "0fac41ac6bd97d2ca4ea9c186b300f846a72d533cd8d3b1f9842afc87f6de3d7"
+    },
+    {
+      "bytes": 11550,
+      "path": "runs/pc_pow_share_events_delta/seed_00/chronos_metrics.csv",
+      "sha256": "7aa055745bc1f52ce6bebb9d42abdfa564e5266b26b2a87d2590f7cce2fab570"
+    },
+    {
+      "bytes": 1059,
+      "path": "runs/pc_pow_share_events_delta/seed_00/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 328,
+      "path": "runs/pc_pow_share_events_delta/seed_00/chronos_summary.json",
+      "sha256": "8fec7c08420be9ce1eddbd714b8e500bb39583044c5bfeac5856a5234223d9cb"
+    },
+    {
+      "bytes": 127,
+      "path": "runs/pc_pow_share_events_delta/seed_00/config.json",
+      "sha256": "94f03ba52846fcf41a5bf3fc521c140ab6e3a35996dadf941ca8735a0fb44595"
+    },
+    {
+      "bytes": 2153,
+      "path": "runs/pc_pow_share_events_delta/seed_00/deltas.csv",
+      "sha256": "27da2238d5a3c0dcf0a14b06543501cffe8b0afb2a75af7697d702e58e21ef38"
+    },
+    {
+      "bytes": 9479,
+      "path": "runs/pc_pow_share_events_delta/seed_00/events.csv",
+      "sha256": "e816e9cfd48e0bf857b27ded205994a47ec45902efc3e7cf4b90ec74bca12488"
+    },
+    {
+      "bytes": 750,
+      "path": "runs/pc_pow_share_events_delta/seed_00/metrics.json",
+      "sha256": "e046ae3c376d8d35d3f4821358bbd08fff126495636b4c4cbaf013f76e2bb5c5"
+    },
+    {
+      "bytes": 9907,
+      "path": "runs/pc_pow_share_events_delta/seed_01/chronos_metrics.csv",
+      "sha256": "b8d3e8f6aa1bcaf1d4deccb67c5495c5b62a5bf25298e358061d10475c8ed772"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/pc_pow_share_events_delta/seed_01/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 328,
+      "path": "runs/pc_pow_share_events_delta/seed_01/chronos_summary.json",
+      "sha256": "d7df248c1e657b4894ad0fd70e17630671d35f2b6796b8b1175265a197305077"
+    },
+    {
+      "bytes": 127,
+      "path": "runs/pc_pow_share_events_delta/seed_01/config.json",
+      "sha256": "e3ed645e854d17b5de8093fa107472588d5c731ccf5543279b6c99f27b753c27"
+    },
+    {
+      "bytes": 1947,
+      "path": "runs/pc_pow_share_events_delta/seed_01/deltas.csv",
+      "sha256": "d20cecd2e1b441c174ca23e0d46c2e4716c6c23776075014d7578b0a67d18b71"
+    },
+    {
+      "bytes": 8371,
+      "path": "runs/pc_pow_share_events_delta/seed_01/events.csv",
+      "sha256": "e1e9a8385e0667e914d0a8f03c6c34e7a7cda3b048405a6b0057b584dbb994d8"
+    },
+    {
+      "bytes": 750,
+      "path": "runs/pc_pow_share_events_delta/seed_01/metrics.json",
+      "sha256": "c98f133155cd7601cb70364f5d49f758763b45c2b010b8ea8ff35721e78c3a93"
+    },
+    {
+      "bytes": 11550,
+      "path": "runs/pc_pow_share_events_metric/seed_00/chronos_metrics.csv",
+      "sha256": "7aa055745bc1f52ce6bebb9d42abdfa564e5266b26b2a87d2590f7cce2fab570"
+    },
+    {
+      "bytes": 1059,
+      "path": "runs/pc_pow_share_events_metric/seed_00/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 328,
+      "path": "runs/pc_pow_share_events_metric/seed_00/chronos_summary.json",
+      "sha256": "8fec7c08420be9ce1eddbd714b8e500bb39583044c5bfeac5856a5234223d9cb"
+    },
+    {
+      "bytes": 128,
+      "path": "runs/pc_pow_share_events_metric/seed_00/config.json",
+      "sha256": "8bf67d13607c6e12b085f6fb507331417596bb9f073dc259c7dedb80da6b863b"
+    },
+    {
+      "bytes": 2153,
+      "path": "runs/pc_pow_share_events_metric/seed_00/deltas.csv",
+      "sha256": "27da2238d5a3c0dcf0a14b06543501cffe8b0afb2a75af7697d702e58e21ef38"
+    },
+    {
+      "bytes": 9479,
+      "path": "runs/pc_pow_share_events_metric/seed_00/events.csv",
+      "sha256": "e816e9cfd48e0bf857b27ded205994a47ec45902efc3e7cf4b90ec74bca12488"
+    },
+    {
+      "bytes": 751,
+      "path": "runs/pc_pow_share_events_metric/seed_00/metrics.json",
+      "sha256": "3fca6e22b750216feece97b930fa8d4347af9da6941e7ddbc8ae8c44d14ef8e8"
+    },
+    {
+      "bytes": 9907,
+      "path": "runs/pc_pow_share_events_metric/seed_01/chronos_metrics.csv",
+      "sha256": "b8d3e8f6aa1bcaf1d4deccb67c5495c5b62a5bf25298e358061d10475c8ed772"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/pc_pow_share_events_metric/seed_01/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 328,
+      "path": "runs/pc_pow_share_events_metric/seed_01/chronos_summary.json",
+      "sha256": "d7df248c1e657b4894ad0fd70e17630671d35f2b6796b8b1175265a197305077"
+    },
+    {
+      "bytes": 128,
+      "path": "runs/pc_pow_share_events_metric/seed_01/config.json",
+      "sha256": "398dda38dd7cf1661429dd1e80b1bb9a28199253e653887b873f1bacbb478d60"
+    },
+    {
+      "bytes": 1947,
+      "path": "runs/pc_pow_share_events_metric/seed_01/deltas.csv",
+      "sha256": "d20cecd2e1b441c174ca23e0d46c2e4716c6c23776075014d7578b0a67d18b71"
+    },
+    {
+      "bytes": 8371,
+      "path": "runs/pc_pow_share_events_metric/seed_01/events.csv",
+      "sha256": "e1e9a8385e0667e914d0a8f03c6c34e7a7cda3b048405a6b0057b584dbb994d8"
+    },
+    {
+      "bytes": 751,
+      "path": "runs/pc_pow_share_events_metric/seed_01/metrics.json",
+      "sha256": "38c8aac02647728f6b1940314e89c89f6b7f0df1fdb29437daa484ea8af9cb3e"
+    },
+    {
+      "bytes": 11518,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_00/chronos_metrics.csv",
+      "sha256": "fe0693bbe98fa86d1a80636d1627d6c256a99384ce20874c1e827b77550368e1"
+    },
+    {
+      "bytes": 1059,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_00/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 329,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_00/chronos_summary.json",
+      "sha256": "4f77d5f5704f42d73bc056becabd230b1e5b25f25d5f38a8466a7185f2dc8681"
+    },
+    {
+      "bytes": 137,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_00/config.json",
+      "sha256": "23df7dc4dab1c571cb0a8fc91cd67ff753025f651ad17e38ce19c134f7223ceb"
+    },
+    {
+      "bytes": 2176,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_00/deltas.csv",
+      "sha256": "d9828ef0d2b40a98401d849e713123461e9bcf7d3bf51fd8b62d2b137d8c6e80"
+    },
+    {
+      "bytes": 14144,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_00/events.csv",
+      "sha256": "0a757070df1781d996eabc0ef206302c063def8d3e82898b7d0304acb3bab2bf"
+    },
+    {
+      "bytes": 761,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_00/metrics.json",
+      "sha256": "4fe2bec58b89b34a88f49742d0725de7f677fb7195714e7cfda103fe0a8b1199"
+    },
+    {
+      "bytes": 9566,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_01/chronos_metrics.csv",
+      "sha256": "26d047bd2f0cce09d2cd311854d36897fa80e056a1e37e6bfee1dc502db9f1cf"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_01/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 312,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_01/chronos_summary.json",
+      "sha256": "61def040aa314c8f1827c26b433bdc70bf4975e5bc66aa9d9b99c0660aa1f0b7"
+    },
+    {
+      "bytes": 137,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_01/config.json",
+      "sha256": "f237fac770187be5f69e958504f3b0e22765d077ad8f305ea556f661c887c179"
+    },
+    {
+      "bytes": 1960,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_01/deltas.csv",
+      "sha256": "dbbf508f1bcbd5ad50638aeea9931794bfed97be4a459ca97c8dec1c3f3d4c16"
+    },
+    {
+      "bytes": 12487,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_01/events.csv",
+      "sha256": "852843a4ae3fa8619c5f1a1476c716a35c650b49263c3566ce3189431baa6116"
+    },
+    {
+      "bytes": 744,
+      "path": "runs/pc_pow_surrogate_blockshuffle_delta/seed_01/metrics.json",
+      "sha256": "a27cdc8916e09a6ef28c63f34728a6b2396c92439487f03c0c817c4b9ee3f402"
+    },
+    {
+      "bytes": 11518,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_00/chronos_metrics.csv",
+      "sha256": "fe0693bbe98fa86d1a80636d1627d6c256a99384ce20874c1e827b77550368e1"
+    },
+    {
+      "bytes": 1059,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_00/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 329,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_00/chronos_summary.json",
+      "sha256": "4f77d5f5704f42d73bc056becabd230b1e5b25f25d5f38a8466a7185f2dc8681"
+    },
+    {
+      "bytes": 138,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_00/config.json",
+      "sha256": "d187e0bf2b1b426624bfe42cc28dcadeab51727a8c2c27ad919867929829be6a"
+    },
+    {
+      "bytes": 2176,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_00/deltas.csv",
+      "sha256": "d9828ef0d2b40a98401d849e713123461e9bcf7d3bf51fd8b62d2b137d8c6e80"
+    },
+    {
+      "bytes": 14144,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_00/events.csv",
+      "sha256": "0a757070df1781d996eabc0ef206302c063def8d3e82898b7d0304acb3bab2bf"
+    },
+    {
+      "bytes": 762,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_00/metrics.json",
+      "sha256": "8c883bd45434b3b9160ecc95e76367ffa8b9e15f4378557fbcc6456f7ec7c971"
+    },
+    {
+      "bytes": 9566,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_01/chronos_metrics.csv",
+      "sha256": "26d047bd2f0cce09d2cd311854d36897fa80e056a1e37e6bfee1dc502db9f1cf"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_01/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 312,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_01/chronos_summary.json",
+      "sha256": "61def040aa314c8f1827c26b433bdc70bf4975e5bc66aa9d9b99c0660aa1f0b7"
+    },
+    {
+      "bytes": 138,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_01/config.json",
+      "sha256": "de901dd1326391a7204c609a107e50048259700de0a6a4f42e7f501e14a5c459"
+    },
+    {
+      "bytes": 1960,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_01/deltas.csv",
+      "sha256": "dbbf508f1bcbd5ad50638aeea9931794bfed97be4a459ca97c8dec1c3f3d4c16"
+    },
+    {
+      "bytes": 12487,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_01/events.csv",
+      "sha256": "852843a4ae3fa8619c5f1a1476c716a35c650b49263c3566ce3189431baa6116"
+    },
+    {
+      "bytes": 745,
+      "path": "runs/pc_pow_surrogate_blockshuffle_metric/seed_01/metrics.json",
+      "sha256": "e7abf3fa85ad366012284f49e11d21eb7a750409bfeb25b82b39daedb0685306"
+    },
+    {
+      "bytes": 11467,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_00/chronos_metrics.csv",
+      "sha256": "6ffa80470948e8a1b717d48ce9658f3969677da03596dea3b5b8bd9e7e9282eb"
+    },
+    {
+      "bytes": 1059,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_00/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 329,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_00/chronos_summary.json",
+      "sha256": "91407321bfff78b03ad69a9fa7492dd7ce5ed88b4b66e48fcc550bf3ec623da5"
+    },
+    {
+      "bytes": 130,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_00/config.json",
+      "sha256": "6a06596d436f2fe305e63d36e0f5538f800c811c5e30beb69bfe52d462416092"
+    },
+    {
+      "bytes": 2127,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_00/deltas.csv",
+      "sha256": "b009fb7e7ca054ebc204820e3b3676bb054f848c0138c21a052e4bea6bdb6ab7"
+    },
+    {
+      "bytes": 13464,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_00/events.csv",
+      "sha256": "34c5c2419fe94590a75eedc39c70b198304bc1217d5ee6811af48f53ef96ac20"
+    },
+    {
+      "bytes": 754,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_00/metrics.json",
+      "sha256": "ef385772cd4d8a13ec4a513e2b54f2b697e4dc3e817b895292b90359f3974551"
+    },
+    {
+      "bytes": 9843,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_01/chronos_metrics.csv",
+      "sha256": "b4ba314392582abf39911458b936f6bab8fd7f3a03071f6722922dd1c42c30ba"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_01/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 324,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_01/chronos_summary.json",
+      "sha256": "4ca461ca21940d6ef0f6891cb9b930dd1dd9d36ab197957817670e4cb84db8b5"
+    },
+    {
+      "bytes": 130,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_01/config.json",
+      "sha256": "448ad5864c901eb5d7961dc0631158089be4533f98253a17ea3657dd75e58790"
+    },
+    {
+      "bytes": 1863,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_01/deltas.csv",
+      "sha256": "05b0d7399b5e0c034ddef686212c6f54d65e0eea46ca28070127f542593acf2e"
+    },
+    {
+      "bytes": 11887,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_01/events.csv",
+      "sha256": "0a1a3132c12936675bfa6da69795cb5a9b09d19f041049b7556974197323da22"
+    },
+    {
+      "bytes": 749,
+      "path": "runs/pc_pow_surrogate_iaaft_delta/seed_01/metrics.json",
+      "sha256": "9fb216e7da829795a5b142964978cfa90f03684cdb289893bd1bad4f1de043d7"
+    },
+    {
+      "bytes": 11467,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_00/chronos_metrics.csv",
+      "sha256": "6ffa80470948e8a1b717d48ce9658f3969677da03596dea3b5b8bd9e7e9282eb"
+    },
+    {
+      "bytes": 1059,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_00/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 329,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_00/chronos_summary.json",
+      "sha256": "91407321bfff78b03ad69a9fa7492dd7ce5ed88b4b66e48fcc550bf3ec623da5"
+    },
+    {
+      "bytes": 131,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_00/config.json",
+      "sha256": "347826ec4905663193686db4b7ea679731ab4d8145d1c2d16cf56fc6a69932cf"
+    },
+    {
+      "bytes": 2127,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_00/deltas.csv",
+      "sha256": "b009fb7e7ca054ebc204820e3b3676bb054f848c0138c21a052e4bea6bdb6ab7"
+    },
+    {
+      "bytes": 13464,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_00/events.csv",
+      "sha256": "34c5c2419fe94590a75eedc39c70b198304bc1217d5ee6811af48f53ef96ac20"
+    },
+    {
+      "bytes": 755,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_00/metrics.json",
+      "sha256": "984adc9f1c1dec07f185f7c270f331adc4938eb061031c63f690bef5b33ed634"
+    },
+    {
+      "bytes": 9843,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_01/chronos_metrics.csv",
+      "sha256": "b4ba314392582abf39911458b936f6bab8fd7f3a03071f6722922dd1c42c30ba"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_01/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 324,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_01/chronos_summary.json",
+      "sha256": "4ca461ca21940d6ef0f6891cb9b930dd1dd9d36ab197957817670e4cb84db8b5"
+    },
+    {
+      "bytes": 131,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_01/config.json",
+      "sha256": "e56d70fc9bc62d31a1e8b9ddf8db569e571d9e3ecdf6559f2ce1a5997b004142"
+    },
+    {
+      "bytes": 1863,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_01/deltas.csv",
+      "sha256": "05b0d7399b5e0c034ddef686212c6f54d65e0eea46ca28070127f542593acf2e"
+    },
+    {
+      "bytes": 11887,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_01/events.csv",
+      "sha256": "0a1a3132c12936675bfa6da69795cb5a9b09d19f041049b7556974197323da22"
+    },
+    {
+      "bytes": 750,
+      "path": "runs/pc_pow_surrogate_iaaft_metric/seed_01/metrics.json",
+      "sha256": "0159a6c93f8cbcf31df1a66e51eb9c39d25c1301b6ad256e19a27ed2eb3e5ec9"
+    },
+    {
+      "bytes": 11119,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_00/chronos_metrics.csv",
+      "sha256": "c9d8d9759af96191c5195c924be3427dd47afff46dedb6ce04cda6127f89d40e"
+    },
+    {
+      "bytes": 1059,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_00/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 329,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_00/chronos_summary.json",
+      "sha256": "7895631d13ec9874c23c52a7de3ed2cc2a48757365c461d27822164f55e9e7f5"
+    },
+    {
+      "bytes": 130,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_00/config.json",
+      "sha256": "ca6fed5f1db08c0228f538308e461564b7b0887cf742f945d0561200850cbf8d"
+    },
+    {
+      "bytes": 2230,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_00/deltas.csv",
+      "sha256": "15f00a373608fab6338d9189499718b548b534903715722bc5115331c0f114e8"
+    },
+    {
+      "bytes": 12308,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_00/events.csv",
+      "sha256": "a62748c995c50d2b37741e088fc5a989241ba2ff57e37e8aa3feb5e9cc46a006"
+    },
+    {
+      "bytes": 754,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_00/metrics.json",
+      "sha256": "0d582be65ee7120dd0e85aa4c35c26e17f61076b37debb95997186e177609b86"
+    },
+    {
+      "bytes": 9842,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_01/chronos_metrics.csv",
+      "sha256": "4b400e848610972c6b9ec1cea00ee3864051776ba24cbc3d0f89dcee340984c1"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_01/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 327,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_01/chronos_summary.json",
+      "sha256": "3f51d805e4045fb262825cfa970c61c3b2081bc54add2f788b9d87514b90e916"
+    },
+    {
+      "bytes": 130,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_01/config.json",
+      "sha256": "e1476f1dbf7aae440cdc575ca275dade8937db8ce2ca155b993420eacd4d4fb2"
+    },
+    {
+      "bytes": 1883,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_01/deltas.csv",
+      "sha256": "a45b6712cb7a0a3f7f76741f3ca9416c2382dcec128d3980caaebc0244df3444"
+    },
+    {
+      "bytes": 10867,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_01/events.csv",
+      "sha256": "82ef9f54838d5b16a4200dd59b79b0be15f082c054b4a2863b8fde7893f4e6ad"
+    },
+    {
+      "bytes": 752,
+      "path": "runs/pc_pow_surrogate_phase_delta/seed_01/metrics.json",
+      "sha256": "0e76a83e3feb18bc0a4b3fa8d8325ff7aa5007a2f04ca63d105bda82bb6ede23"
+    },
+    {
+      "bytes": 11119,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_00/chronos_metrics.csv",
+      "sha256": "c9d8d9759af96191c5195c924be3427dd47afff46dedb6ce04cda6127f89d40e"
+    },
+    {
+      "bytes": 1059,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_00/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 329,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_00/chronos_summary.json",
+      "sha256": "7895631d13ec9874c23c52a7de3ed2cc2a48757365c461d27822164f55e9e7f5"
+    },
+    {
+      "bytes": 131,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_00/config.json",
+      "sha256": "fa03c197c615fc10e270e11372c0ba8eb4c47f861edcd46719db4bd64fe4e426"
+    },
+    {
+      "bytes": 2230,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_00/deltas.csv",
+      "sha256": "15f00a373608fab6338d9189499718b548b534903715722bc5115331c0f114e8"
+    },
+    {
+      "bytes": 12308,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_00/events.csv",
+      "sha256": "a62748c995c50d2b37741e088fc5a989241ba2ff57e37e8aa3feb5e9cc46a006"
+    },
+    {
+      "bytes": 755,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_00/metrics.json",
+      "sha256": "d8bb60bb55e0a8c054df610781dc7278b8f55068f56c10e0a6bc6aac9c5d025e"
+    },
+    {
+      "bytes": 9842,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_01/chronos_metrics.csv",
+      "sha256": "4b400e848610972c6b9ec1cea00ee3864051776ba24cbc3d0f89dcee340984c1"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_01/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 327,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_01/chronos_summary.json",
+      "sha256": "3f51d805e4045fb262825cfa970c61c3b2081bc54add2f788b9d87514b90e916"
+    },
+    {
+      "bytes": 131,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_01/config.json",
+      "sha256": "b3f6660f3891ce502e1e97fa5ccd46c398a9a5e9efecf985626b7d251abee4af"
+    },
+    {
+      "bytes": 1883,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_01/deltas.csv",
+      "sha256": "a45b6712cb7a0a3f7f76741f3ca9416c2382dcec128d3980caaebc0244df3444"
+    },
+    {
+      "bytes": 10867,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_01/events.csv",
+      "sha256": "82ef9f54838d5b16a4200dd59b79b0be15f082c054b4a2863b8fde7893f4e6ad"
+    },
+    {
+      "bytes": 753,
+      "path": "runs/pc_pow_surrogate_phase_metric/seed_01/metrics.json",
+      "sha256": "c620d58d7e50c6b540bb3386b97addd9abc6259e3576be98d5ec0fd8b9aef02e"
+    },
+    {
+      "bytes": 11544,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_00/chronos_metrics.csv",
+      "sha256": "57e635c2481f9e2fc9768a4dae50dc6759a6d02280c80dfb398f66ee8b2a41ff"
+    },
+    {
+      "bytes": 1059,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_00/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 315,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_00/chronos_summary.json",
+      "sha256": "47e22a2a2ee9ce4747f50d615bf32f9b1201f92b72efabe57a244a92828b8531"
+    },
+    {
+      "bytes": 132,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_00/config.json",
+      "sha256": "2d67a378ddf49744c235c5f586cfd9b47c15029b067b37de4d659057688b9d64"
+    },
+    {
+      "bytes": 2127,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_00/deltas.csv",
+      "sha256": "f9f25ec917f8b0427f6fcbabfd64215acb1100287fd209cb6e7ac181ee19ee96"
+    },
+    {
+      "bytes": 12444,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_00/events.csv",
+      "sha256": "cf5fe7cf6d10682d69d84b8f7b0c3f44727419a56af26bfae07776f845be5970"
+    },
+    {
+      "bytes": 742,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_00/metrics.json",
+      "sha256": "a4d6897283e973f716ebf54324dc46401e74cb4205cd1a9c9acb26a7bb26f4b4"
+    },
+    {
+      "bytes": 9912,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_01/chronos_metrics.csv",
+      "sha256": "addd79581fe2f68278fab30392cf8762ee76b92148dca1fd5f8e7384c3243aad"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_01/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 327,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_01/chronos_summary.json",
+      "sha256": "39f6fabd657c6b96387d1f1bee4c580b11d5859e849425381f24cdf6f0b61b2c"
+    },
+    {
+      "bytes": 132,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_01/config.json",
+      "sha256": "5c22cc3375220eba45474f46b8ec1e62f414848fb9842ca262a9bd174b5b0fcf"
+    },
+    {
+      "bytes": 1863,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_01/deltas.csv",
+      "sha256": "74da53790dc74ded1cb0809932171a1b9c1db8ef931079d0d4f4006825867585"
+    },
+    {
+      "bytes": 10987,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_01/events.csv",
+      "sha256": "62de33aa492922f49b4f15430bf7a50c38043ce05c3c6ae8fbacc377709d2c76"
+    },
+    {
+      "bytes": 754,
+      "path": "runs/pc_pow_surrogate_shuffle_delta/seed_01/metrics.json",
+      "sha256": "bf99ee843cb94178e708f1ba68c09dc245dc5734fbb2b89def7dcf0d00662811"
+    },
+    {
+      "bytes": 11544,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_00/chronos_metrics.csv",
+      "sha256": "57e635c2481f9e2fc9768a4dae50dc6759a6d02280c80dfb398f66ee8b2a41ff"
+    },
+    {
+      "bytes": 1059,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_00/chronos_metrics_meta.json",
+      "sha256": "afab47a29bf72617fa166507daa99141bebe48d359fa5096b51b3611c1cbee4b"
+    },
+    {
+      "bytes": 315,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_00/chronos_summary.json",
+      "sha256": "47e22a2a2ee9ce4747f50d615bf32f9b1201f92b72efabe57a244a92828b8531"
+    },
+    {
+      "bytes": 133,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_00/config.json",
+      "sha256": "24518e5f6293d53d1cdabd9c51838fd88a18a579f041d92403bbdae14aceeaa5"
+    },
+    {
+      "bytes": 2127,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_00/deltas.csv",
+      "sha256": "f9f25ec917f8b0427f6fcbabfd64215acb1100287fd209cb6e7ac181ee19ee96"
+    },
+    {
+      "bytes": 12444,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_00/events.csv",
+      "sha256": "cf5fe7cf6d10682d69d84b8f7b0c3f44727419a56af26bfae07776f845be5970"
+    },
+    {
+      "bytes": 743,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_00/metrics.json",
+      "sha256": "cd7e882d253286614cb4abc5b36a836cca72b41fa866cde2a74a2fa6e2487ae5"
+    },
+    {
+      "bytes": 9912,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_01/chronos_metrics.csv",
+      "sha256": "addd79581fe2f68278fab30392cf8762ee76b92148dca1fd5f8e7384c3243aad"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_01/chronos_metrics_meta.json",
+      "sha256": "29c0b0cd24fb297432af75e74ca2ac7592eaa5a063135c0e7d194917baf3f901"
+    },
+    {
+      "bytes": 327,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_01/chronos_summary.json",
+      "sha256": "39f6fabd657c6b96387d1f1bee4c580b11d5859e849425381f24cdf6f0b61b2c"
+    },
+    {
+      "bytes": 133,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_01/config.json",
+      "sha256": "a029e015c33e39f561c6219da75da26d7cfbefc47544bf49ab776e46cc35eae7"
+    },
+    {
+      "bytes": 1863,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_01/deltas.csv",
+      "sha256": "74da53790dc74ded1cb0809932171a1b9c1db8ef931079d0d4f4006825867585"
+    },
+    {
+      "bytes": 10987,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_01/events.csv",
+      "sha256": "62de33aa492922f49b4f15430bf7a50c38043ce05c3c6ae8fbacc377709d2c76"
+    },
+    {
+      "bytes": 755,
+      "path": "runs/pc_pow_surrogate_shuffle_metric/seed_01/metrics.json",
+      "sha256": "9882a5ba1b93637975ef065109a55650c5b2ac92e2af0d39814af65e59640951"
+    },
+    {
+      "bytes": 5001,
+      "path": "system_profile.json",
+      "sha256": "ec4a37457463b97b9fd021605b9ec34f5919ab9962f6601de930ca7577fbcd32"
+    }
+  ],
+  "protocol_sha256": "a8e7c92fc1df1bdb5b8c66fdf3e96a01612389e7263ac38900ce9ba52d7acce3",
+  "run_id": "pc_chronos_v0_2_jitter_2ms_bits17",
+  "schema_version": "0.1"
+}

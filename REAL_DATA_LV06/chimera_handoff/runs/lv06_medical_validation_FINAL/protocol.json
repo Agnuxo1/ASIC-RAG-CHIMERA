@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1",
+  "source_id": "lv06_medical_sealing",
+  "duration_s": 300,
+  "intervention": {
+    "mode": "heartbeat_modulated",
+    "hz": 2.4
+  },
+  "medical_binding": "merkle_bridge_v6"
+}

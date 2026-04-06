@@ -1,0 +1,13 @@
+{
+  "id": "franciscoangulo/asic-rag-chimera-benchmark",
+  "title": "ASIC-RAG-CHIMERA Performance Benchmark",
+  "code_file": "kaggle_benchmark_notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["franciscoangulo/asic-rag-chimera"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

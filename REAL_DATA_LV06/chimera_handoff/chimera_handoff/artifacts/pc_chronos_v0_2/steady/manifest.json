@@ -1,0 +1,43 @@
+{
+  "counts": {},
+  "files": [
+    {
+      "bytes": 904,
+      "path": "preregistered_metrics.json",
+      "sha256": "28d6d7d54ac9c93a33396022bc4cdd1a8e4981f87c26ce4c1ced0b8bf7495bc4"
+    },
+    {
+      "bytes": 1044,
+      "path": "protocol.json",
+      "sha256": "5925aa8ecf8d3d37ebd9dcbdef48f9d24edb76bbd7374ac2359990a8fa1dde51"
+    },
+    {
+      "bytes": 106654,
+      "path": "summary_prng/PLOTS/rollout_mse_mean_by_source_sigma_0.png",
+      "sha256": "bdaaa7dcae49f19d2b3898b2964feb971cc88af8b6353a35fe20b375d0749cfb"
+    },
+    {
+      "bytes": 55642,
+      "path": "summary_prng/REPORT.json",
+      "sha256": "6d8422a7d52ec3e97f51f2dc6000f379cfed479704dfbfaf9efbe9272340f345"
+    },
+    {
+      "bytes": 2665,
+      "path": "summary_prng/REPORT.md",
+      "sha256": "93d12a8a9fe62ebbb9f6184156bddb933bd6d9d029361c78fb866e80a3bbde95"
+    },
+    {
+      "bytes": 24642,
+      "path": "summary_prng/SUMMARY.csv",
+      "sha256": "436981d4e700cc80f72c45d65c260657de6b459cb3cee4acd71baaa1c6db7cbf"
+    },
+    {
+      "bytes": 2999,
+      "path": "system_profile.json",
+      "sha256": "69034b6f1f0122b219a5bfade2ee34f5cfbd0198add2854be50eb7ff5bfdf623"
+    }
+  ],
+  "protocol_sha256": "5925aa8ecf8d3d37ebd9dcbdef48f9d24edb76bbd7374ac2359990a8fa1dde51",
+  "run_id": "artifact_pc_chronos_v0_2_steady",
+  "schema_version": "0.1"
+}

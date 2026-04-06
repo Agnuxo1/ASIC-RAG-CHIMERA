@@ -76,3 +76,11 @@ data/
 
 # Logs
 *.log
+
+# Large files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+# Temp
+.claude/

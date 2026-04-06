@@ -1,0 +1,7 @@
+{
+  "domain": "log10_delta",
+  "kind": "phase",
+  "schema_version": "0.1",
+  "seed": 1,
+  "sha256_q1e-6_first64_deltas": "547f775932ff2820d5173cca464c3848eb379a7257faa6cf051c929faa6e221e"
+}

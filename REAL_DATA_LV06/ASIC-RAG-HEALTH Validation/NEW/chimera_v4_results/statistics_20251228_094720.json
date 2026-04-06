@@ -1,0 +1,16 @@
+{
+  "experiment_date": "2025-12-28T09:47:20.806658",
+  "duration_s": 303.64964151382446,
+  "total_shares": 21,
+  "verified_by_python": 0,
+  "verified_by_miner_trust": 21,
+  "python_verification_rate": 0.0,
+  "total_records_sealed": 105,
+  "avg_latency_s": 14.45177808262053,
+  "min_latency_s": 0.9381968975067139,
+  "max_latency_s": 41.955036878585815,
+  "hashrate_mhs": 23.762732013472483,
+  "efficiency_mhw": 2.640303557052498,
+  "vs_rtx3090_efficiency": 7.700885374736453,
+  "power_watts": 9.0
+}

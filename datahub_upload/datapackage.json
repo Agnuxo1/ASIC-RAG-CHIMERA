@@ -1,0 +1,57 @@
+{
+  "name": "asic-rag-chimera",
+  "title": "ASIC-RAG-CHIMERA: Hardware-Accelerated Cryptographic RAG",
+  "description": "\n        Complete implementation and benchmarks of ASIC-RAG-CHIMERA, a novel system that\n        repurposes obsolete Bitcoin mining ASICs for cryptographically-secured\n        Retrieval-Augmented Generation.\n\n        Features:\n        - SHA-256 hardware acceleration (51,319 QPS)\n        - AES-256-GCM encryption\n        - Merkle tree integrity verification\n        - 53/53 tests passing\n\n        Dataset includes:\n        - Complete source code\n        - Benchmark results and performance metrics\n        - Academic paper (PDF)\n        - Documentation and examples\n        ",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/Agnuxo1/ASIC-RAG-CHIMERA",
+  "keywords": [
+    "rag",
+    "retrieval-augmented-generation",
+    "cryptography",
+    "hardware-acceleration",
+    "bitcoin",
+    "asic",
+    "sha256",
+    "encryption",
+    "blockchain",
+    "merkle-tree",
+    "security"
+  ],
+  "contributors": [
+    {
+      "title": "Francisco Angulo de Lafuente",
+      "email": "contact@example.com",
+      "role": "author"
+    }
+  ],
+  "sources": [
+    {
+      "name": "GitHub Repository",
+      "web": "https://github.com/Agnuxo1/ASIC-RAG-CHIMERA"
+    }
+  ],
+  "resources": [
+    {
+      "name": "benchmark_summary",
+      "path": "benchmark_summary.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Comprehensive benchmark results"
+    },
+    {
+      "name": "complete_package",
+      "path": "ASIC-RAG-CHIMERA_Complete.zip",
+      "format": "zip",
+      "mediatype": "application/zip",
+      "description": "Complete source code and documentation"
+    },
+    {
+      "name": "paper",
+      "path": "ASIC-RAG-CHIMERA_Unified.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "description": "Academic paper"
+    }
+  ]
+}

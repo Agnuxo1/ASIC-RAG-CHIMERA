@@ -1,0 +1,21 @@
+{
+  "backend": "cpu",
+  "confound": {
+    "batch_flush_ms": 200.0,
+    "jitter_ms": 2.0,
+    "mode": "batching"
+  },
+  "difficulty_bits": 17,
+  "duration_s": 20.0,
+  "header_mode": "seeded_prefix",
+  "header_prefix_bytes": 80,
+  "intervention": {
+    "heartbeat_duty": 0.5,
+    "heartbeat_hz": 2.4,
+    "mode": "none"
+  },
+  "schema_version": "0.1",
+  "seed": 1,
+  "source_id": "pc_pow_share_events",
+  "threads": 1
+}

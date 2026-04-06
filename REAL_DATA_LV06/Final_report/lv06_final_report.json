@@ -1,0 +1,31 @@
+{
+    "timestamp": "2025-12-23T20:54:57.840747",
+    "config": {
+        "HOST": "0.0.0.0",
+        "PORT": 3333,
+        "WINDOW_TIME": 2.0,
+        "HANDSHAKE_TIMEOUT": 600.0,
+        "WARMUP_STEPS": 15,
+        "D_BASE": 1.0,
+        "EPSILON": 0.05,
+        "NARMA_STEPS": 500,
+        "MEMORY_STEPS": 300,
+        "XOR_STEPS": 300,
+        "POISSON_SIM_STEPS": 500,
+        "TRAIN_RATIO": 0.8,
+        "RIDGE_ALPHAS": [
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0,
+            100.0
+        ]
+    },
+    "results": {
+        "NARMA10": 0.22221398389409863,
+        "MEMORY_DELAY_5": 0.20245445000766069
+    },
+    "status": "PARTIAL SUCCESS",
+    "message": "Hardware shows basic correlation but high noise."
+}

@@ -1,0 +1,1976 @@
+{
+  "baseline_source": "pc_pow_share_events_delta",
+  "by_sigma": {
+    "0": {
+      "sigma": 0.0,
+      "sources": {
+        "pc_pow_share_events_delta": {
+          "ach_h_frac_at_0": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_h_frac_at_top": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_x_noise_rel_std": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_neutral_0p98_1p02_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_spectral_radius_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "cv_mean": {
+            "catastrophic": 0,
+            "iqr": 0.011665506921566648,
+            "mean": 0.9510067354993077,
+            "median": 0.9510067354993077,
+            "n": 2,
+            "trimmed_mean": 0.9510067354993077
+          },
+          "eig_neutral_angle_abs_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_neutral_count_0p98_1p02": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_spectral_radius": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_double_neg_change_frac": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_gap_mean_l1": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_mutual_pairs": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hist_entropy_mean": {
+            "catastrophic": 0,
+            "iqr": 0.019785237857562588,
+            "mean": 0.7886441715569348,
+            "median": 0.7886441715569348,
+            "n": 2,
+            "trimmed_mean": 0.7886441715569348
+          },
+          "pred_mse": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "psd_peak_hz_error_hz_mean": {
+            "catastrophic": 0,
+            "iqr": 0.20105315085634645,
+            "mean": 2.4680828304283633,
+            "median": 2.4680828304283633,
+            "n": 2,
+            "trimmed_mean": 2.4680828304283633
+          },
+          "psd_peak_hz_iqr_hz": {
+            "catastrophic": 0,
+            "iqr": 1.2314685402666843,
+            "mean": 4.969032712866147,
+            "median": 4.969032712866147,
+            "n": 2,
+            "trimmed_mean": 4.969032712866147
+          },
+          "psd_peak_hz_median": {
+            "catastrophic": 0,
+            "iqr": 0.056872388391369544,
+            "mean": 2.3921072034453648,
+            "median": 2.3921072034453648,
+            "n": 2,
+            "trimmed_mean": 2.3921072034453648
+          },
+          "psd_peak_q_mean": {
+            "catastrophic": 0,
+            "iqr": 4.422870370370369,
+            "mean": 34.80712962962962,
+            "median": 34.80712962962962,
+            "n": 2,
+            "trimmed_mean": 34.80712962962962
+          },
+          "psd_peak_snr_db_mean": {
+            "catastrophic": 0,
+            "iqr": 0.04934918938306687,
+            "mean": 8.656037098383333,
+            "median": 8.656037098383333,
+            "n": 2,
+            "trimmed_mean": 8.656037098383333
+          },
+          "r_birth_p90": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_active_pairs_rate_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_edge_count": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "rollout_mse_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          }
+        },
+        "pc_pow_share_events_metric": {
+          "ach_h_frac_at_0": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_h_frac_at_top": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_x_noise_rel_std": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_neutral_0p98_1p02_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_spectral_radius_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "cv_mean": {
+            "catastrophic": 0,
+            "iqr": 0.011665506921566648,
+            "mean": 0.9510067354993077,
+            "median": 0.9510067354993077,
+            "n": 2,
+            "trimmed_mean": 0.9510067354993077
+          },
+          "eig_neutral_angle_abs_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_neutral_count_0p98_1p02": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_spectral_radius": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_double_neg_change_frac": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_gap_mean_l1": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_mutual_pairs": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hist_entropy_mean": {
+            "catastrophic": 0,
+            "iqr": 0.019785237857562588,
+            "mean": 0.7886441715569348,
+            "median": 0.7886441715569348,
+            "n": 2,
+            "trimmed_mean": 0.7886441715569348
+          },
+          "pred_mse": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "psd_peak_hz_error_hz_mean": {
+            "catastrophic": 0,
+            "iqr": 0.20105315085634645,
+            "mean": 2.4680828304283633,
+            "median": 2.4680828304283633,
+            "n": 2,
+            "trimmed_mean": 2.4680828304283633
+          },
+          "psd_peak_hz_iqr_hz": {
+            "catastrophic": 0,
+            "iqr": 1.2314685402666843,
+            "mean": 4.969032712866147,
+            "median": 4.969032712866147,
+            "n": 2,
+            "trimmed_mean": 4.969032712866147
+          },
+          "psd_peak_hz_median": {
+            "catastrophic": 0,
+            "iqr": 0.056872388391369544,
+            "mean": 2.3921072034453648,
+            "median": 2.3921072034453648,
+            "n": 2,
+            "trimmed_mean": 2.3921072034453648
+          },
+          "psd_peak_q_mean": {
+            "catastrophic": 0,
+            "iqr": 4.422870370370369,
+            "mean": 34.80712962962962,
+            "median": 34.80712962962962,
+            "n": 2,
+            "trimmed_mean": 34.80712962962962
+          },
+          "psd_peak_snr_db_mean": {
+            "catastrophic": 0,
+            "iqr": 0.04934918938306687,
+            "mean": 8.656037098383333,
+            "median": 8.656037098383333,
+            "n": 2,
+            "trimmed_mean": 8.656037098383333
+          },
+          "r_birth_p90": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_active_pairs_rate_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_edge_count": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "rollout_mse_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          }
+        },
+        "pc_pow_surrogate_blockshuffle_delta": {
+          "ach_h_frac_at_0": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_h_frac_at_top": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_x_noise_rel_std": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_neutral_0p98_1p02_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_spectral_radius_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "cv_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0024777145987544547,
+            "mean": 0.9728069188678264,
+            "median": 0.9728069188678264,
+            "n": 2,
+            "trimmed_mean": 0.9728069188678264
+          },
+          "eig_neutral_angle_abs_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_neutral_count_0p98_1p02": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_spectral_radius": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_double_neg_change_frac": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_gap_mean_l1": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_mutual_pairs": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hist_entropy_mean": {
+            "catastrophic": 0,
+            "iqr": 0.08570587530488483,
+            "mean": 0.662631261183892,
+            "median": 0.662631261183892,
+            "n": 2,
+            "trimmed_mean": 0.662631261183892
+          },
+          "pred_mse": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "psd_peak_hz_error_hz_mean": {
+            "catastrophic": 0,
+            "iqr": 0.9423010433590591,
+            "mean": 2.2758627379615293,
+            "median": 2.2758627379615293,
+            "n": 2,
+            "trimmed_mean": 2.2758627379615293
+          },
+          "psd_peak_hz_iqr_hz": {
+            "catastrophic": 0,
+            "iqr": 1.0539469154424115,
+            "mean": 2.2457101072056034,
+            "median": 2.2457101072056034,
+            "n": 2,
+            "trimmed_mean": 2.2457101072056034
+          },
+          "psd_peak_hz_median": {
+            "catastrophic": 0,
+            "iqr": 2.167760487213627,
+            "mean": 4.5159386248654485,
+            "median": 4.5159386248654485,
+            "n": 2,
+            "trimmed_mean": 4.5159386248654485
+          },
+          "psd_peak_q_mean": {
+            "catastrophic": 0,
+            "iqr": 4.9712962962962735,
+            "mean": 26.371296296296315,
+            "median": 26.371296296296315,
+            "n": 2,
+            "trimmed_mean": 26.371296296296315
+          },
+          "psd_peak_snr_db_mean": {
+            "catastrophic": 0,
+            "iqr": 0.6694840513694302,
+            "mean": 9.616502829404638,
+            "median": 9.616502829404638,
+            "n": 2,
+            "trimmed_mean": 9.616502829404638
+          },
+          "r_birth_p90": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_active_pairs_rate_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_edge_count": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "rollout_mse_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          }
+        },
+        "pc_pow_surrogate_blockshuffle_metric": {
+          "ach_h_frac_at_0": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_h_frac_at_top": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_x_noise_rel_std": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_neutral_0p98_1p02_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_spectral_radius_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "cv_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0024777145987544547,
+            "mean": 0.9728069188678264,
+            "median": 0.9728069188678264,
+            "n": 2,
+            "trimmed_mean": 0.9728069188678264
+          },
+          "eig_neutral_angle_abs_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_neutral_count_0p98_1p02": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_spectral_radius": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_double_neg_change_frac": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_gap_mean_l1": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_mutual_pairs": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hist_entropy_mean": {
+            "catastrophic": 0,
+            "iqr": 0.08570587530488483,
+            "mean": 0.662631261183892,
+            "median": 0.662631261183892,
+            "n": 2,
+            "trimmed_mean": 0.662631261183892
+          },
+          "pred_mse": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "psd_peak_hz_error_hz_mean": {
+            "catastrophic": 0,
+            "iqr": 0.9423010433590591,
+            "mean": 2.2758627379615293,
+            "median": 2.2758627379615293,
+            "n": 2,
+            "trimmed_mean": 2.2758627379615293
+          },
+          "psd_peak_hz_iqr_hz": {
+            "catastrophic": 0,
+            "iqr": 1.0539469154424115,
+            "mean": 2.2457101072056034,
+            "median": 2.2457101072056034,
+            "n": 2,
+            "trimmed_mean": 2.2457101072056034
+          },
+          "psd_peak_hz_median": {
+            "catastrophic": 0,
+            "iqr": 2.167760487213627,
+            "mean": 4.5159386248654485,
+            "median": 4.5159386248654485,
+            "n": 2,
+            "trimmed_mean": 4.5159386248654485
+          },
+          "psd_peak_q_mean": {
+            "catastrophic": 0,
+            "iqr": 4.9712962962962735,
+            "mean": 26.371296296296315,
+            "median": 26.371296296296315,
+            "n": 2,
+            "trimmed_mean": 26.371296296296315
+          },
+          "psd_peak_snr_db_mean": {
+            "catastrophic": 0,
+            "iqr": 0.6694840513694302,
+            "mean": 9.616502829404638,
+            "median": 9.616502829404638,
+            "n": 2,
+            "trimmed_mean": 9.616502829404638
+          },
+          "r_birth_p90": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_active_pairs_rate_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_edge_count": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "rollout_mse_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          }
+        },
+        "pc_pow_surrogate_iaaft_delta": {
+          "ach_h_frac_at_0": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_h_frac_at_top": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_x_noise_rel_std": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_neutral_0p98_1p02_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_spectral_radius_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "cv_mean": {
+            "catastrophic": 0,
+            "iqr": 0.04323940878665744,
+            "mean": 0.9682708525901359,
+            "median": 0.9682708525901359,
+            "n": 2,
+            "trimmed_mean": 0.9682708525901359
+          },
+          "eig_neutral_angle_abs_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_neutral_count_0p98_1p02": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_spectral_radius": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_double_neg_change_frac": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_gap_mean_l1": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_mutual_pairs": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hist_entropy_mean": {
+            "catastrophic": 0,
+            "iqr": 0.03663377762164299,
+            "mean": 0.8071009159326155,
+            "median": 0.8071009159326155,
+            "n": 2,
+            "trimmed_mean": 0.8071009159326155
+          },
+          "pred_mse": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "psd_peak_hz_error_hz_mean": {
+            "catastrophic": 0,
+            "iqr": 0.19083673154919056,
+            "mean": 2.452781035579605,
+            "median": 2.452781035579605,
+            "n": 2,
+            "trimmed_mean": 2.452781035579605
+          },
+          "psd_peak_hz_iqr_hz": {
+            "catastrophic": 0,
+            "iqr": 1.1428587039053681,
+            "mean": 3.0489360519716655,
+            "median": 3.0489360519716655,
+            "n": 2,
+            "trimmed_mean": 3.0489360519716655
+          },
+          "psd_peak_hz_median": {
+            "catastrophic": 0,
+            "iqr": 0.6570776728366217,
+            "mean": 3.8454834699380704,
+            "median": 3.8454834699380704,
+            "n": 2,
+            "trimmed_mean": 3.8454834699380704
+          },
+          "psd_peak_q_mean": {
+            "catastrophic": 0,
+            "iqr": 4.218055555555555,
+            "mean": 30.481944444444473,
+            "median": 30.481944444444473,
+            "n": 2,
+            "trimmed_mean": 30.481944444444473
+          },
+          "psd_peak_snr_db_mean": {
+            "catastrophic": 0,
+            "iqr": 0.030152077601136362,
+            "mean": 7.746597961348021,
+            "median": 7.746597961348021,
+            "n": 2,
+            "trimmed_mean": 7.746597961348021
+          },
+          "r_birth_p90": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_active_pairs_rate_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_edge_count": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "rollout_mse_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          }
+        },
+        "pc_pow_surrogate_iaaft_metric": {
+          "ach_h_frac_at_0": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_h_frac_at_top": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_x_noise_rel_std": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_neutral_0p98_1p02_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_spectral_radius_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "cv_mean": {
+            "catastrophic": 0,
+            "iqr": 0.04323940878665744,
+            "mean": 0.9682708525901359,
+            "median": 0.9682708525901359,
+            "n": 2,
+            "trimmed_mean": 0.9682708525901359
+          },
+          "eig_neutral_angle_abs_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_neutral_count_0p98_1p02": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_spectral_radius": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_double_neg_change_frac": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_gap_mean_l1": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_mutual_pairs": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hist_entropy_mean": {
+            "catastrophic": 0,
+            "iqr": 0.03663377762164299,
+            "mean": 0.8071009159326155,
+            "median": 0.8071009159326155,
+            "n": 2,
+            "trimmed_mean": 0.8071009159326155
+          },
+          "pred_mse": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "psd_peak_hz_error_hz_mean": {
+            "catastrophic": 0,
+            "iqr": 0.19083673154919056,
+            "mean": 2.452781035579605,
+            "median": 2.452781035579605,
+            "n": 2,
+            "trimmed_mean": 2.452781035579605
+          },
+          "psd_peak_hz_iqr_hz": {
+            "catastrophic": 0,
+            "iqr": 1.1428587039053681,
+            "mean": 3.0489360519716655,
+            "median": 3.0489360519716655,
+            "n": 2,
+            "trimmed_mean": 3.0489360519716655
+          },
+          "psd_peak_hz_median": {
+            "catastrophic": 0,
+            "iqr": 0.6570776728366217,
+            "mean": 3.8454834699380704,
+            "median": 3.8454834699380704,
+            "n": 2,
+            "trimmed_mean": 3.8454834699380704
+          },
+          "psd_peak_q_mean": {
+            "catastrophic": 0,
+            "iqr": 4.218055555555555,
+            "mean": 30.481944444444473,
+            "median": 30.481944444444473,
+            "n": 2,
+            "trimmed_mean": 30.481944444444473
+          },
+          "psd_peak_snr_db_mean": {
+            "catastrophic": 0,
+            "iqr": 0.030152077601136362,
+            "mean": 7.746597961348021,
+            "median": 7.746597961348021,
+            "n": 2,
+            "trimmed_mean": 7.746597961348021
+          },
+          "r_birth_p90": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_active_pairs_rate_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_edge_count": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "rollout_mse_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          }
+        },
+        "pc_pow_surrogate_phase_delta": {
+          "ach_h_frac_at_0": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_h_frac_at_top": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_x_noise_rel_std": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_neutral_0p98_1p02_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_spectral_radius_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "cv_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0019752167447233404,
+            "mean": 1.28419054848847,
+            "median": 1.28419054848847,
+            "n": 2,
+            "trimmed_mean": 1.28419054848847
+          },
+          "eig_neutral_angle_abs_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_neutral_count_0p98_1p02": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_spectral_radius": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_double_neg_change_frac": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_gap_mean_l1": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_mutual_pairs": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hist_entropy_mean": {
+            "catastrophic": 0,
+            "iqr": 0.01653651858338756,
+            "mean": 0.8013520904655562,
+            "median": 0.8013520904655562,
+            "n": 2,
+            "trimmed_mean": 0.8013520904655562
+          },
+          "pred_mse": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "psd_peak_hz_error_hz_mean": {
+            "catastrophic": 0,
+            "iqr": 0.5598137255654945,
+            "mean": 3.165530473315057,
+            "median": 3.165530473315057,
+            "n": 2,
+            "trimmed_mean": 3.165530473315057
+          },
+          "psd_peak_hz_iqr_hz": {
+            "catastrophic": 0,
+            "iqr": 1.7774049665320497,
+            "mean": 5.720120728176743,
+            "median": 5.720120728176743,
+            "n": 2,
+            "trimmed_mean": 5.720120728176743
+          },
+          "psd_peak_hz_median": {
+            "catastrophic": 0,
+            "iqr": 0.5183328596160307,
+            "mean": 1.2283920312136636,
+            "median": 1.2283920312136636,
+            "n": 2,
+            "trimmed_mean": 1.2283920312136636
+          },
+          "psd_peak_q_mean": {
+            "catastrophic": 0,
+            "iqr": 6.57361111111118,
+            "mean": 24.726388888888913,
+            "median": 24.726388888888913,
+            "n": 2,
+            "trimmed_mean": 24.726388888888913
+          },
+          "psd_peak_snr_db_mean": {
+            "catastrophic": 0,
+            "iqr": 0.1055463735327038,
+            "mean": 8.935517650856745,
+            "median": 8.935517650856745,
+            "n": 2,
+            "trimmed_mean": 8.935517650856745
+          },
+          "r_birth_p90": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_active_pairs_rate_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_edge_count": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "rollout_mse_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          }
+        },
+        "pc_pow_surrogate_phase_metric": {
+          "ach_h_frac_at_0": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_h_frac_at_top": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_x_noise_rel_std": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_neutral_0p98_1p02_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_spectral_radius_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "cv_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0019752167447233404,
+            "mean": 1.28419054848847,
+            "median": 1.28419054848847,
+            "n": 2,
+            "trimmed_mean": 1.28419054848847
+          },
+          "eig_neutral_angle_abs_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_neutral_count_0p98_1p02": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_spectral_radius": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_double_neg_change_frac": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_gap_mean_l1": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_mutual_pairs": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hist_entropy_mean": {
+            "catastrophic": 0,
+            "iqr": 0.01653651858338756,
+            "mean": 0.8013520904655562,
+            "median": 0.8013520904655562,
+            "n": 2,
+            "trimmed_mean": 0.8013520904655562
+          },
+          "pred_mse": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "psd_peak_hz_error_hz_mean": {
+            "catastrophic": 0,
+            "iqr": 0.5598137255654945,
+            "mean": 3.165530473315057,
+            "median": 3.165530473315057,
+            "n": 2,
+            "trimmed_mean": 3.165530473315057
+          },
+          "psd_peak_hz_iqr_hz": {
+            "catastrophic": 0,
+            "iqr": 1.7774049665320497,
+            "mean": 5.720120728176743,
+            "median": 5.720120728176743,
+            "n": 2,
+            "trimmed_mean": 5.720120728176743
+          },
+          "psd_peak_hz_median": {
+            "catastrophic": 0,
+            "iqr": 0.5183328596160307,
+            "mean": 1.2283920312136636,
+            "median": 1.2283920312136636,
+            "n": 2,
+            "trimmed_mean": 1.2283920312136636
+          },
+          "psd_peak_q_mean": {
+            "catastrophic": 0,
+            "iqr": 6.57361111111118,
+            "mean": 24.726388888888913,
+            "median": 24.726388888888913,
+            "n": 2,
+            "trimmed_mean": 24.726388888888913
+          },
+          "psd_peak_snr_db_mean": {
+            "catastrophic": 0,
+            "iqr": 0.1055463735327038,
+            "mean": 8.935517650856745,
+            "median": 8.935517650856745,
+            "n": 2,
+            "trimmed_mean": 8.935517650856745
+          },
+          "r_birth_p90": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_active_pairs_rate_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_edge_count": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "rollout_mse_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          }
+        },
+        "pc_pow_surrogate_shuffle_delta": {
+          "ach_h_frac_at_0": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_h_frac_at_top": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_x_noise_rel_std": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_neutral_0p98_1p02_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_spectral_radius_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "cv_mean": {
+            "catastrophic": 0,
+            "iqr": 0.03549583532873779,
+            "mean": 0.9487837665821677,
+            "median": 0.9487837665821677,
+            "n": 2,
+            "trimmed_mean": 0.9487837665821677
+          },
+          "eig_neutral_angle_abs_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_neutral_count_0p98_1p02": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_spectral_radius": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_double_neg_change_frac": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_gap_mean_l1": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_mutual_pairs": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hist_entropy_mean": {
+            "catastrophic": 0,
+            "iqr": 0.019562913842788188,
+            "mean": 0.7842708613521169,
+            "median": 0.7842708613521169,
+            "n": 2,
+            "trimmed_mean": 0.7842708613521169
+          },
+          "pred_mse": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "psd_peak_hz_error_hz_mean": {
+            "catastrophic": 0,
+            "iqr": 0.2885705940569063,
+            "mean": 2.886390934030441,
+            "median": 2.886390934030441,
+            "n": 2,
+            "trimmed_mean": 2.886390934030441
+          },
+          "psd_peak_hz_iqr_hz": {
+            "catastrophic": 0,
+            "iqr": 0.0743021323142683,
+            "mean": 2.923021247593892,
+            "median": 2.923021247593892,
+            "n": 2,
+            "trimmed_mean": 2.923021247593892
+          },
+          "psd_peak_hz_median": {
+            "catastrophic": 0,
+            "iqr": 0.2623159924357603,
+            "mean": 5.06231599243576,
+            "median": 5.06231599243576,
+            "n": 2,
+            "trimmed_mean": 5.06231599243576
+          },
+          "psd_peak_q_mean": {
+            "catastrophic": 0,
+            "iqr": 1.6727777777777746,
+            "mean": 31.400555555555563,
+            "median": 31.400555555555563,
+            "n": 2,
+            "trimmed_mean": 31.400555555555563
+          },
+          "psd_peak_snr_db_mean": {
+            "catastrophic": 0,
+            "iqr": 0.3051860833451183,
+            "mean": 8.026020675885677,
+            "median": 8.026020675885677,
+            "n": 2,
+            "trimmed_mean": 8.026020675885677
+          },
+          "r_birth_p90": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_active_pairs_rate_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_edge_count": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "rollout_mse_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          }
+        },
+        "pc_pow_surrogate_shuffle_metric": {
+          "ach_h_frac_at_0": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_h_frac_at_top": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "ach_x_noise_rel_std": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_neutral_0p98_1p02_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "boot_spectral_radius_p50": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "cv_mean": {
+            "catastrophic": 0,
+            "iqr": 0.03549583532873779,
+            "mean": 0.9487837665821677,
+            "median": 0.9487837665821677,
+            "n": 2,
+            "trimmed_mean": 0.9487837665821677
+          },
+          "eig_neutral_angle_abs_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_neutral_count_0p98_1p02": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "eig_spectral_radius": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_double_neg_change_frac": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_gap_mean_l1": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hey_mutual_pairs": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "hist_entropy_mean": {
+            "catastrophic": 0,
+            "iqr": 0.019562913842788188,
+            "mean": 0.7842708613521169,
+            "median": 0.7842708613521169,
+            "n": 2,
+            "trimmed_mean": 0.7842708613521169
+          },
+          "pred_mse": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "psd_peak_hz_error_hz_mean": {
+            "catastrophic": 0,
+            "iqr": 0.2885705940569063,
+            "mean": 2.886390934030441,
+            "median": 2.886390934030441,
+            "n": 2,
+            "trimmed_mean": 2.886390934030441
+          },
+          "psd_peak_hz_iqr_hz": {
+            "catastrophic": 0,
+            "iqr": 0.0743021323142683,
+            "mean": 2.923021247593892,
+            "median": 2.923021247593892,
+            "n": 2,
+            "trimmed_mean": 2.923021247593892
+          },
+          "psd_peak_hz_median": {
+            "catastrophic": 0,
+            "iqr": 0.2623159924357603,
+            "mean": 5.06231599243576,
+            "median": 5.06231599243576,
+            "n": 2,
+            "trimmed_mean": 5.06231599243576
+          },
+          "psd_peak_q_mean": {
+            "catastrophic": 0,
+            "iqr": 1.6727777777777746,
+            "mean": 31.400555555555563,
+            "median": 31.400555555555563,
+            "n": 2,
+            "trimmed_mean": 31.400555555555563
+          },
+          "psd_peak_snr_db_mean": {
+            "catastrophic": 0,
+            "iqr": 0.3051860833451183,
+            "mean": 8.026020675885677,
+            "median": 8.026020675885677,
+            "n": 2,
+            "trimmed_mean": 8.026020675885677
+          },
+          "r_birth_p90": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_active_pairs_rate_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "r_mutual_edge_count": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          },
+          "rollout_mse_mean": {
+            "catastrophic": 0,
+            "iqr": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 2,
+            "trimmed_mean": 0.0
+          }
+        }
+      }
+    }
+  },
+  "paired_effects_vs_baseline_rollout_mse_mean_by_sigma": {
+    "0": [
+      {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean_diff": 0.0,
+        "n": 2,
+        "seeds": [
+          0,
+          1
+        ],
+        "source": "pc_pow_share_events_metric"
+      },
+      {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean_diff": 0.0,
+        "n": 2,
+        "seeds": [
+          0,
+          1
+        ],
+        "source": "pc_pow_surrogate_blockshuffle_delta"
+      },
+      {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean_diff": 0.0,
+        "n": 2,
+        "seeds": [
+          0,
+          1
+        ],
+        "source": "pc_pow_surrogate_blockshuffle_metric"
+      },
+      {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean_diff": 0.0,
+        "n": 2,
+        "seeds": [
+          0,
+          1
+        ],
+        "source": "pc_pow_surrogate_iaaft_delta"
+      },
+      {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean_diff": 0.0,
+        "n": 2,
+        "seeds": [
+          0,
+          1
+        ],
+        "source": "pc_pow_surrogate_iaaft_metric"
+      },
+      {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean_diff": 0.0,
+        "n": 2,
+        "seeds": [
+          0,
+          1
+        ],
+        "source": "pc_pow_surrogate_phase_delta"
+      },
+      {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean_diff": 0.0,
+        "n": 2,
+        "seeds": [
+          0,
+          1
+        ],
+        "source": "pc_pow_surrogate_phase_metric"
+      },
+      {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean_diff": 0.0,
+        "n": 2,
+        "seeds": [
+          0,
+          1
+        ],
+        "source": "pc_pow_surrogate_shuffle_delta"
+      },
+      {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean_diff": 0.0,
+        "n": 2,
+        "seeds": [
+          0,
+          1
+        ],
+        "source": "pc_pow_surrogate_shuffle_metric"
+      }
+    ]
+  },
+  "sigmas": [
+    0.0
+  ]
+}

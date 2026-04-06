@@ -1,0 +1,34 @@
+ASIC-RAG-CHIMERA Upload Summary
+Generated: 2025-12-09 20:34:32
+================================================================================
+
+Success: 3/8
+
+Weights & Biases: FAILED
+  Error: wandb: WARNING If you're specifying your api key in code, ensure this code is not shared publicly.
+wandb: WARNING Consider setting the WANDB_API_KEY environment variable, or running `wandb login` from
+Zenodo: SUCCESS
+Figshare: FAILED
+  Error: Traceback (most recent call last):
+  File "D:\ASIC_RAG\upload_scripts\upload_to_figshare.py", line 56, in <module>
+    article_id = r.json()["location"].split("/")[-1]
+                 ~~~~~~~~^^^^^^^
+Open Science Framework: FAILED
+  Error: Traceback (most recent call last):
+  File "D:\ASIC_RAG\upload_scripts\upload_to_osf.py", line 41, in <module>
+    "public": true
+              ^^^^
+NameError: name 'true' is not defined. Did you mean:
+Kaggle: SUCCESS
+HuggingFace Hub: SUCCESS
+OpenML: FAILED
+  Error: Traceback (most recent call last):
+  File "D:\ASIC_RAG\upload_scripts\upload_to_openml.py", line 47, in <module>
+    dataset = openml.datasets.functions.create_dataset(
+        name="ASIC-RAG-CHIMERA 
+DataHub: FAILED
+  Error: Traceback (most recent call last):
+  File "D:\ASIC_RAG\upload_scripts\upload_to_datahub.py", line 142, in <module>
+    validate_and_publish()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\ASIC_RAG\upload_scri

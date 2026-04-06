@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chimera-handoff"
+version = "0.1.0"
+description = "CHIMERA handoff: PC-CHRONOS + thermal stream + schema validation"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "UNLICENSED"}
+
+[project.scripts]
+chimera-pc-chronos-sweep = "chimera_handoff.cli.pc_chronos_sweep:main"
+chimera-did = "chimera_handoff.cli.did:main"
+chimera-summarize = "chimera_handoff.cli.summarize:main"
+chimera-verify = "chimera_handoff.cli.verify:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

@@ -1,0 +1,60 @@
+{
+  "chronos": {
+    "entropy_bins": 32,
+    "metrics_window_events": 64,
+    "psd_bin_dt_s": 0.05
+  },
+  "delta_contexts": {
+    "calib_seconds": 10.0,
+    "clip_k": 5.0,
+    "window_L": 64
+  },
+  "governance_root": null,
+  "pow": {
+    "backend": "cpu",
+    "confound": {
+      "batch_flush_ms": 200.0,
+      "jitter_ms": 2.0,
+      "mode": "none"
+    },
+    "difficulty_bits": 17,
+    "duration_s": 120.0,
+    "intervention": {
+      "heartbeat_duty": 0.5,
+      "heartbeat_hz": 2.4,
+      "mode": "none"
+    },
+    "threads": 1
+  },
+  "protocol_version": "pc_chronos_v0_2",
+  "r_closure": {
+    "max_iters": 32,
+    "min_support": 20,
+    "mode": "diag",
+    "p_thr": 0.9,
+    "q": 0.8
+  },
+  "run_kind": "pc_chronos_v0_2",
+  "schema_version": "0.1",
+  "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "session": null,
+  "surrogates": {
+    "kinds": [
+      "shuffle",
+      "blockshuffle",
+      "phase",
+      "iaaft"
+    ]
+  }
+}

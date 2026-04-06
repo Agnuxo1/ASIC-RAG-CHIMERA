@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1",
+  "run_kind": "pc_chronos_v0_2",
+  "source_id": "lv06_silicon_reservoir",
+  "duration_s": 240,
+  "intervention": {
+    "mode": "heartbeat",
+    "heartbeat_hz": 2.4
+  },
+  "chronos": {
+    "metrics_window_events": 8,
+    "psd_bin_dt_s": 0.05,
+    "entropy_bins": 16
+  }
+}

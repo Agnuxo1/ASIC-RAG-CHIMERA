@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "source_id": "lv06_silicon_reservoir",
+  "duration_s": 240,
+  "intervention": {
+    "mode": "sync_heartbeat_v5",
+    "hz": 2.4
+  }
+}

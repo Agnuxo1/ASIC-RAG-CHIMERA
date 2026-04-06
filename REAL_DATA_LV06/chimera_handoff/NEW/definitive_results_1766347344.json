@@ -1,0 +1,123 @@
+{
+  "experiment_info": {
+    "name": "ASIC-RAG-HEALTH Definitive Validation",
+    "date": "2025-12-21T21:02:24.495743",
+    "duration_seconds": 300.0373115539551,
+    "hardware": "Lucky Miner LV06 (BM1366)",
+    "difficulty": 0.08
+  },
+  "cryptographic_binding": {
+    "total_records": 250,
+    "total_patients": 50,
+    "merkle_roots_sealed": 49,
+    "proofs_generated": 23,
+    "proofs_verified": 23,
+    "verification_rate": 1.0
+  },
+  "performance": {
+    "avg_hashrate_mhs": 26.339190228408867,
+    "peak_hashrate_mhs": 475.4963334414087,
+    "total_shares": 23
+  },
+  "latency": {
+    "mean_s": 12.522335085001858,
+    "p50_s": 8.94106388092041,
+    "p95_s": 38.240349531173706,
+    "p99_s": 42.198410749435425
+  },
+  "energy": {
+    "power_watts": 9.0,
+    "efficiency_mhw": 2.9265766920454297,
+    "energy_consumed_wh": 0.7500932788848877
+  },
+  "comparative": {
+    "vs_rtx3090_efficiency_multiplier": 8.535848685132503,
+    "vs_rtx3080_efficiency_multiplier": 2.497345443878767
+  },
+  "entropy": {
+    "latency_stdev": 12.012457493825458,
+    "coefficient_of_variation": 0.9592825469279219
+  },
+  "proofs": [
+    {
+      "merkle_root": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": "14c001de",
+      "timestamp": 1766347049.9327903,
+      "difficulty": 0.08,
+      "block_hash": "0db557dba3931b84773dd7c801ccd930cec456d590aafbb3993ae95a8ae1739f",
+      "records_count": 0
+    },
+    {
+      "merkle_root": "b350b2819c0639a1cf75f8319effc1a4235c4f5c894b7fbb17773419bfa78e59",
+      "nonce": "eafa02c2",
+      "timestamp": 1766347058.8738542,
+      "difficulty": 0.08,
+      "block_hash": "875b01a6727ae4ef48d07ba3edda23acb5b569bee4b923065b8d1eba4f53dfb8",
+      "records_count": 5
+    },
+    {
+      "merkle_root": "14a2f912feff7cb9dd21e942c71b4f4147e586cb13124b1f7e13b0e56f8e2135",
+      "nonce": "e9ae02c8",
+      "timestamp": 1766347097.1142037,
+      "difficulty": 0.08,
+      "block_hash": "3550b8f6e70800c48b4d01c2480a1ca5a987efaf692242c9756dd7e2f255343c",
+      "records_count": 5
+    },
+    {
+      "merkle_root": "ebbc0febad93647a0ec3f178b7f657009df4a929ce88be2291ccfcdab3c2098d",
+      "nonce": "f28d00dc",
+      "timestamp": 1766347102.9481308,
+      "difficulty": 0.08,
+      "block_hash": "b0bede9a58a984a3edd5676f8c8a0242932a8936bdb29e77865b4a3efde7994e",
+      "records_count": 5
+    },
+    {
+      "merkle_root": "88cb822c589260af8115b9e54586741bc377304a4351a2319d6ba29e2dab8436",
+      "nonce": "3c3903ca",
+      "timestamp": 1766347106.9185052,
+      "difficulty": 0.08,
+      "block_hash": "edea2eac44c77e52edc5f9a6357b9c041d85873e0a5ae57197ed3cc023e3e855",
+      "records_count": 5
+    },
+    {
+      "merkle_root": "88cb822c589260af8115b9e54586741bc377304a4351a2319d6ba29e2dab8436",
+      "nonce": "70ad02c0",
+      "timestamp": 1766347108.915621,
+      "difficulty": 0.08,
+      "block_hash": "269294e10799d59536a65ed72fb2a88b387887a094169236c9e6be611a9838da",
+      "records_count": 5
+    },
+    {
+      "merkle_root": "6b474f9a413a5cefca730b7f31e688534af7f683c85a5b60b082842a422d9b83",
+      "nonce": "f24001dc",
+      "timestamp": 1766347114.6923492,
+      "difficulty": 0.08,
+      "block_hash": "c4d136b8e50149054c874862a677e5e4d21142490be49e2f5a92a9bf8e0c1a42",
+      "records_count": 5
+    },
+    {
+      "merkle_root": "b43ed4c6ad804060a1ac224bf3d9f811ff9206b43314cf8e6ff52a04e6c6c968",
+      "nonce": "32cf02aa",
+      "timestamp": 1766347116.9409873,
+      "difficulty": 0.08,
+      "block_hash": "c193016b483087686657b7d466bbdded629cee4403280331980f3ff6ec77f013",
+      "records_count": 5
+    },
+    {
+      "merkle_root": "d8c802eac2cefb92b116abb3c602ddecaae1272b9f4e95addcd6d03c31c7ac70",
+      "nonce": "468700d4",
+      "timestamp": 1766347123.574187,
+      "difficulty": 0.08,
+      "block_hash": "d366b5eded617971dca950048be8bc5c471befd0a3b671621574db675f213b41",
+      "records_count": 5
+    },
+    {
+      "merkle_root": "d8c802eac2cefb92b116abb3c602ddecaae1272b9f4e95addcd6d03c31c7ac70",
+      "nonce": "82ff02c4",
+      "timestamp": 1766347128.0750465,
+      "difficulty": 0.08,
+      "block_hash": "dfb39258c369d3f616c7c464c7ad9fb8a16587bcf4827dd4e50d0d686c40fc28",
+      "records_count": 5
+    }
+  ]
+}

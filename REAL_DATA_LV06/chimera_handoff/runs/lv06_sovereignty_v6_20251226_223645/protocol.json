@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "source_id": "lv06_silicon_reservoir",
+  "duration_s": 240,
+  "intervention": {
+    "mode": "diagnostic_v6",
+    "hz": 2.4
+  }
+}

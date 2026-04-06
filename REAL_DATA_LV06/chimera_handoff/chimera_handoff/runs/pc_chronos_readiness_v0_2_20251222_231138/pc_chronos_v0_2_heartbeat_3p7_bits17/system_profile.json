@@ -1,0 +1,231 @@
+{
+  "cores": {
+    "os_cpu_count": 4
+  },
+  "cpu": {
+    "flags": [
+      "fpu",
+      "vme",
+      "de",
+      "pse",
+      "tsc",
+      "msr",
+      "pae",
+      "mce",
+      "cx8",
+      "apic",
+      "sep",
+      "mtrr",
+      "pge",
+      "mca",
+      "cmov",
+      "pat",
+      "pse36",
+      "clflush",
+      "dts",
+      "acpi",
+      "mmx",
+      "fxsr",
+      "sse",
+      "sse2",
+      "ss",
+      "ht",
+      "tm",
+      "pbe",
+      "syscall",
+      "nx",
+      "pdpe1gb",
+      "rdtscp",
+      "lm",
+      "constant_tsc",
+      "arch_perfmon",
+      "pebs",
+      "bts",
+      "rep_good",
+      "nopl",
+      "xtopology",
+      "nonstop_tsc",
+      "cpuid",
+      "aperfmperf",
+      "pni",
+      "pclmulqdq",
+      "dtes64",
+      "monitor",
+      "ds_cpl",
+      "vmx",
+      "smx",
+      "est",
+      "tm2",
+      "ssse3",
+      "sdbg",
+      "fma",
+      "cx16",
+      "xtpr",
+      "pdcm",
+      "pcid",
+      "sse4_1",
+      "sse4_2",
+      "x2apic",
+      "movbe",
+      "popcnt",
+      "tsc_deadline_timer",
+      "aes",
+      "xsave",
+      "avx",
+      "f16c",
+      "rdrand",
+      "lahf_lm",
+      "abm",
+      "cpuid_fault",
+      "epb",
+      "pti",
+      "ssbd",
+      "ibrs",
+      "ibpb",
+      "stibp",
+      "tpr_shadow",
+      "flexpriority",
+      "ept",
+      "vpid",
+      "ept_ad",
+      "fsgsbase",
+      "tsc_adjust",
+      "bmi1",
+      "avx2",
+      "smep",
+      "bmi2",
+      "erms",
+      "invpcid",
+      "xsaveopt",
+      "dtherm",
+      "ida",
+      "arat",
+      "pln",
+      "pts",
+      "vnmi",
+      "md_clear",
+      "flush_l1d",
+      "ibpb_exit_to_user"
+    ],
+    "model_name": "Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz"
+  },
+  "entropy_sources": [
+    {
+      "available": true,
+      "blocking_risk": "none",
+      "id": "prng",
+      "notes": [
+        "Deterministic baseline (seeded)."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "PRNG"
+    },
+    {
+      "available": true,
+      "blocking_risk": "low",
+      "id": "os_urandom",
+      "notes": [
+        "Python os.urandom()."
+      ],
+      "speed_estimate_bytes_per_sec": 402902374.12099904,
+      "trust_class": "OS_ENTROPY"
+    },
+    {
+      "available": true,
+      "blocking_risk": "low",
+      "id": "os_getrandom",
+      "notes": [
+        "Python os.getrandom().",
+        "flags_available=GRND_NONBLOCK,GRND_RANDOM"
+      ],
+      "speed_estimate_bytes_per_sec": 411761746.06985795,
+      "trust_class": "OS_ENTROPY"
+    },
+    {
+      "available": true,
+      "blocking_risk": "high",
+      "id": "dev_random",
+      "notes": [
+        "Linux/Unix special device; may block. Not used by default."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "OS_ENTROPY"
+    },
+    {
+      "available": true,
+      "blocking_risk": "none",
+      "id": "timing_jitter",
+      "notes": [
+        "Derived from perf_counter_ns jitter; machine-dependent and slow."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "TIMING"
+    },
+    {
+      "available": true,
+      "blocking_risk": "none",
+      "id": "rdrand_capability",
+      "notes": [
+        "Capability flag only; not used as an entropy source in this project."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "CPU_CAPABILITY_ONLY"
+    },
+    {
+      "available": false,
+      "blocking_risk": "none",
+      "id": "rdseed_capability",
+      "notes": [
+        "Capability flag only; not used as an entropy source in this project."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "CPU_CAPABILITY_ONLY"
+    },
+    {
+      "available": false,
+      "blocking_risk": "low",
+      "id": "beacon",
+      "notes": [
+        "disabled (no beacon_url provided)"
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "NETWORK_BEACON"
+    },
+    {
+      "available": true,
+      "blocking_risk": "none",
+      "id": "thermal_residual",
+      "notes": [
+        "CPU thermal telemetry available; residual stream requires fitting a simple thermal model.",
+        "temp_path=/sys/class/hwmon/hwmon1/temp1_input",
+        "temp_label=Package id 0",
+        "rapl_energy_path=/sys/class/powercap/intel-rapl:0/energy_uj"
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "CPU_TELEMETRY"
+    }
+  ],
+  "platform": {
+    "machine": "x86_64",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "python": "3.10.12",
+    "python_implementation": "CPython",
+    "release": "6.8.0-90-generic",
+    "system": "Linux",
+    "version": "#91~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 15:20:45 UTC 2"
+  },
+  "timers": {
+    "perf_counter_ns": {
+      "min_positive_delta_ns": 370,
+      "samples": 10000
+    }
+  },
+  "uname": {
+    "machine": "x86_64",
+    "nodename": "richard-OptiPlex-3020",
+    "release": "6.8.0-90-generic",
+    "sysname": "Linux",
+    "version": "#91~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 15:20:45 UTC 2"
+  }
+}

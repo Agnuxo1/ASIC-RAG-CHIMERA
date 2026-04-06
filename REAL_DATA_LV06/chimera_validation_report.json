@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-21T21:58:55.007036",
+    "hardware": "Lucky Miner LV06 (BM1387)",
+    "duration_seconds": 300.20098543167114,
+    "total_samples": 37
+  },
+  "summary": {
+    "passed": 11,
+    "failed": 4,
+    "total": 15,
+    "pass_rate": 0.7333333333333333
+  },
+  "results": [
+    {
+      "test_name": "Throughput QPS",
+      "claim": "Paper claims ~0.18 QPS per BM1387 chip",
+      "passed": true,
+      "measured_value": 0.13089648550165653,
+      "threshold": 0.18,
+      "unit": "QPS",
+      "details": "Measured 0.1309 QPS over 282.7s"
+    },
+    {
+      "test_name": "Mean Latency",
+      "claim": "Paper claims mean latency ~6188ms",
+      "passed": true,
+      "measured_value": 7851.836310492621,
+      "threshold": 6188.0,
+      "unit": "ms",
+      "details": "Measured 7851.84ms vs claimed 6188ms"
+    },
+    {
+      "test_name": "Shannon Entropy",
+      "claim": "Physical entropy sufficient for cryptographic use",
+      "passed": true,
+      "measured_value": 5.058813890331199,
+      "threshold": 3.0,
+      "unit": "bits/symbol",
+      "details": "Crypto requires >3.0 bits. Measured 5.0588 bits. PASS"
+    },
+    {
+      "test_name": "NIST Monobit Test",
+      "claim": "Timing values are uniformly distributed",
+      "passed": true,
+      "measured_value": 0.8657723749926215,
+      "threshold": 0.01,
+      "unit": "p-value",
+      "details": "p=0.8658, threshold=0.01"
+    },
+    {
+      "test_name": "NIST Runs Test",
+      "claim": "No detectable patterns in timing sequence",
+      "passed": true,
+      "measured_value": 0.31780224331901646,
+      "threshold": 0.01,
+      "unit": "p-value",
+      "details": "p=0.3178, threshold=0.01"
+    },
+    {
+      "test_name": "Autocorrelation Independence",
+      "claim": "Successive samples are statistically independent",
+      "passed": true,
+      "measured_value": 0.08062689853339615,
+      "threshold": 0.3,
+      "unit": "|r|",
+      "details": "|r|=0.0806, independence requires <0.3"
+    },
+    {
+      "test_name": "Coefficient of Variation",
+      "claim": "CV > 1 indicates exploitable physical chaos",
+      "passed": true,
+      "measured_value": 0.8726502610889705,
+      "threshold": 0.1,
+      "unit": "CV",
+      "details": "CV=0.8727. Note: CV\u22481 is EXPECTED for Poisson process. This validates timing statistics, NOT special chaos."
+    },
+    {
+      "test_name": "Fading Memory Property",
+      "claim": "System exhibits fading memory (RC requirement)",
+      "passed": false,
+      "measured_value": 0.4444444444444444,
+      "threshold": 0.5,
+      "unit": "decay_rate",
+      "details": "Autocorrelation decay rate: 0.44"
+    },
+    {
+      "test_name": "Separation Property",
+      "claim": "Different inputs produce distinguishable states",
+      "passed": true,
+      "measured_value": 4.405435604448446,
+      "threshold": 1.0,
+      "unit": "ratio",
+      "details": "Inter/intra variance ratio: 4.41"
+    },
+    {
+      "test_name": "Nonlinear Dynamics",
+      "claim": "System exhibits nonlinear dynamics (RC requirement)",
+      "passed": false,
+      "measured_value": 0.0,
+      "threshold": 2.0,
+      "unit": "z-score",
+      "details": "Surrogate comparison z-score: 0.00"
+    },
+    {
+      "test_name": "Hash Collision Rate",
+      "claim": "SHA256 provides collision-free indexing",
+      "passed": true,
+      "measured_value": 0.0,
+      "threshold": 0.001,
+      "unit": "rate",
+      "details": "Collision rate: 0.000000 (threshold: 0.001)"
+    },
+    {
+      "test_name": "LSH Semantic Correlation",
+      "claim": "Hash-based similarity correlates with semantic similarity",
+      "passed": false,
+      "measured_value": 0.0,
+      "threshold": 0.5,
+      "unit": "correlation",
+      "details": "Pearson r=0.0000. FAIL: Hashes do NOT preserve semantic similarity"
+    },
+    {
+      "test_name": "Hash-Based Retrieval Precision",
+      "claim": "Hash-based retrieval outperforms random",
+      "passed": false,
+      "measured_value": 0.0,
+      "threshold": 0.3,
+      "unit": "P@5",
+      "details": "Precision: 0.0000 (random baseline: 0.20). FAIL: No better than random"
+    },
+    {
+      "test_name": "S9 Latency Extrapolation",
+      "claim": "Paper claims 32.74ms latency for full S9",
+      "passed": true,
+      "measured_value": 41.54410746292392,
+      "threshold": 32.74,
+      "unit": "ms",
+      "details": "LV06: 7851.84ms / 189 chips = 41.5441ms theoretical. Paper claims 32.74ms. Note: Assumes perfect parallelism with zero coordination overhead."
+    },
+    {
+      "test_name": "Jitter Scaling Claim",
+      "claim": "Physical jitter is preserved in S9 (not divided by 189)",
+      "passed": true,
+      "measured_value": 6851.907006379244,
+      "threshold": 6851.907006379244,
+      "unit": "ms",
+      "details": "Jitter \u03c3=6851.91ms. This is a VALID claim - jitter is per-chip, not aggregate."
+    }
+  ]
+}

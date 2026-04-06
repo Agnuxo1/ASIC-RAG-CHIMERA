@@ -1,0 +1,41 @@
+{
+  "condition": "heartbeat",
+  "decision_rule": "v0_2_psd_primary",
+  "decision_thresholds": {
+    "confound_rejection": {
+      "target_tol_hz": 0.15
+    },
+    "did_vs_surrogates": {
+      "bootstrap_resamples": 10000,
+      "ci_alpha": 0.05,
+      "k_of_n": [
+        3,
+        4
+      ]
+    }
+  },
+  "metric_polarity": {
+    "psd_peak_hz_error_hz_mean": -1.0,
+    "psd_peak_hz_iqr_hz": -1.0,
+    "psd_peak_q_mean": 1.0,
+    "psd_peak_snr_db_mean": 1.0
+  },
+  "primary_metrics": [
+    "psd_peak_hz_error_hz_mean",
+    "psd_peak_snr_db_mean",
+    "psd_peak_q_mean",
+    "psd_peak_hz_iqr_hz"
+  ],
+  "protocol_version": "pc_chronos_v0_2",
+  "replication_rule": {
+    "out_of_n": 4,
+    "same_direction_at_least_k": 3
+  },
+  "schema_version": "0.1",
+  "secondary_metrics": [
+    "cv_mean",
+    "hist_entropy_mean"
+  ],
+  "seed_range": "0-1",
+  "target_hz": 3.7
+}

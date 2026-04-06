@@ -1,0 +1,92 @@
+[
+  {
+    "proof_id": "p_1766865224",
+    "batch_id": "BATCH-1766865221.6822026",
+    "worker_name": "chimera",
+    "hash_meets_target": true,
+    "response_time_s": 2.7830801010131836,
+    "verified": true,
+    "status": "Verified (Miner)"
+  },
+  {
+    "proof_id": "p_1766865227",
+    "batch_id": "BATCH-1766865224.5659986",
+    "worker_name": "chimera",
+    "hash_meets_target": true,
+    "response_time_s": 2.815694808959961,
+    "verified": true,
+    "status": "Verified (Miner)"
+  },
+  {
+    "proof_id": "p_1766865228",
+    "batch_id": "BATCH-1766865227.4822652",
+    "worker_name": "chimera",
+    "hash_meets_target": true,
+    "response_time_s": 0.9641637802124023,
+    "verified": true,
+    "status": "Verified (Miner)"
+  },
+  {
+    "proof_id": "p_1766865230",
+    "batch_id": "BATCH-1766865228.547058",
+    "worker_name": "chimera",
+    "hash_meets_target": true,
+    "response_time_s": 1.9865765571594238,
+    "verified": true,
+    "status": "Verified (Miner)"
+  },
+  {
+    "proof_id": "p_1766865236",
+    "batch_id": "BATCH-1766865230.6345592",
+    "worker_name": "chimera",
+    "hash_meets_target": true,
+    "response_time_s": 5.325062274932861,
+    "verified": true,
+    "status": "Verified (Miner)"
+  },
+  {
+    "proof_id": "p_1766865238",
+    "batch_id": "BATCH-1766865236.0604334",
+    "worker_name": "chimera",
+    "hash_meets_target": true,
+    "response_time_s": 1.8766210079193115,
+    "verified": true,
+    "status": "Verified (Miner)"
+  },
+  {
+    "proof_id": "p_1766865260",
+    "batch_id": "BATCH-1766865238.0384786",
+    "worker_name": "chimera",
+    "hash_meets_target": true,
+    "response_time_s": 22.431390285491943,
+    "verified": true,
+    "status": "Verified (Miner)"
+  },
+  {
+    "proof_id": "p_1766865265",
+    "batch_id": "BATCH-1766865260.5707853",
+    "worker_name": "chimera",
+    "hash_meets_target": true,
+    "response_time_s": 4.417855978012085,
+    "verified": true,
+    "status": "Verified (Miner)"
+  },
+  {
+    "proof_id": "p_1766865275",
+    "batch_id": "BATCH-1766865265.0898056",
+    "worker_name": "chimera",
+    "hash_meets_target": true,
+    "response_time_s": 9.857389450073242,
+    "verified": true,
+    "status": "Verified (Miner)"
+  },
+  {
+    "proof_id": "p_1766865275",
+    "batch_id": "BATCH-1766865275.0481448",
+    "worker_name": "chimera",
+    "hash_meets_target": true,
+    "response_time_s": 0.6815304756164551,
+    "verified": true,
+    "status": "Verified (Miner)"
+  }
+]

@@ -1,0 +1,428 @@
+CUDA-Accelerated Proof-of-Work in HealthcareBlockchain
+Seid Mehammed
+Woldia University
+Ousman Yesuf
+Woldia University
+Research Article
+Keywords:
+Posted Date:
+October 15th, 2025
+DOI:
+https://doi.org/10.21203/rs.3.rs-6647431/v1
+License:  
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+Read Full License
+Additional Declarations:
+No competing interests reported.
+Page 2/15
+Abstract
+This paper presents a CUDA-accelerated Proof-of-Work (PoW) algorithm tailored for blockchainapplications in the healthcare sector, particularly targeting city-based deployments where the integrityand speed of accessing medical records are paramount. Blockchain's role in securing sensitive patientdata across urban hospital networks and municipal healthcare providers is increasingly critical, buttraditional PoW mechanisms impose signifi cant computational overhead, limiting practical scalability. Byleveraging the parallel processing power of modern GPUs via NVIDIA's CUDA architecture, we achievesubstantial performance improvements suitable for real-time medical data management in cities likeAddis Ababa, Nairobi, and Mumbai. We validate our approach through experiments on healthcare-relatedblockchain simulations, demonstrating its viability for scalable, secure, and urban-friendly medical datamanagement frameworks.
+Introduction
+Blockchain technology has emerged as a transformative force across various sectors, notably inhealthcare, where secure and transparent data exchange is crucial. A major limitation, however, lies inthe computational demands of Proof-of-Work (PoW), the most common consensus mechanism.Originally introduced with Bitcoin [1], PoW ensures network integrity through hash-based puzzles thatdemand substantial computing resources.
+CUDA, NVIDIA’s parallel computing platform, enables effi cient execution of highly parallelizable tasks,such as cryptographic hashing [3]. Recent advancements have showcased CUDA’s potential toaccelerate blockchain workloads, suggesting its suitability for healthcare scenarios where performanceand data security are paramount [4][5].
+This paper explores the integration of CUDA-accelerated PoW into healthcare blockchain frameworks.We analyze performance benefi ts, evaluate security implications, and provide practical guidance for real-world deployment. In particular, we focus on implementations in densely populated cities such as AddisAbaba, Nairobi, Mumbai, and Jakarta, where healthcare infrastructure can greatly benefi t fromdecentralized and high-throughput data management systems.
+Background
+2.1 Blockchain in Healthcare
+Healthcare information systems often face challenges related to interoperability, data integrity, andpatient privacy. Blockchain offers a decentralized solution to these issues. Projects such as MedRec [
+5
+]have pioneered blockchain-based medical record management, demonstrating the potential to enhancetransparency and patient control.
+Page 3/15
+Urban healthcare systems in cities such as Lagos, Cairo, and São Paulo have struggled with centralizeddata breaches and ineffi cient coordination among providers. The decentralized nature of blockchainoffers an avenue for resilient, transparent, and scalable infrastructure [
+6
+][
+7
+].
+2.2 Proof-of-Work
+PoW, a cornerstone of many blockchain systems, requires miners to solve cryptographic puzzles. Thediffi culty of these puzzles adjusts dynamically to maintain network stability. While effective in ensuringconsensus, PoW’s energy and computation demands hinder scalability.
+In cities like Dhaka and Karachi, where energy resources are constrained, optimizing PoW for effi ciency isessential for any feasible deployment of blockchain healthcare systems.
+2.3 CUDA and GPU Computing
+CUDA (Compute Unifi ed Device Architecture) facilitates the development of high-performanceapplications that execute parallel algorithms on NVIDIA GPUs. Its effectiveness in cryptographicworkloads has been established in various contexts [
+3
+][
+4
+], positioning it as a viable candidate forblockchain acceleration.
+CUDA makes it possible to exploit the thousands of cores available on a modern GPU, signifi cantlyspeeding up hash computations that are central to PoW. Moreover, CUDA programming allowsdevelopers to fi ne-tune memory usage, thread execution, and task allocation—critical factors formaximizing throughput and minimizing latency in blockchain operations.
+Related Work
+Several studies have examined the intersection of blockchain, healthcare, and GPU acceleration. Iliakis etal. [
+4
+] presented a GPU-based blockchain transaction model, while Azaria et al. [
+5
+] explored healthcare-specifi c blockchain applications. Recent surveys have synthesized key challenges and highlighteddirections for scalable solutions [
+6
+][
+7
+]. Privacy-preserving approaches [
+8
+][
+29
+] further enhance the utilityof blockchain in sensitive domains like healthcare.
+City-level pilots have shown the feasibility of blockchain healthcare implementations in cities like Seouland Dubai, where technology infrastructure supports integration with existing systems [
+6
+][
+9
+].
+Additionally, researchers have examined blockchain's ability to handle the nuances of healthcare data:access control, audit trails, and regulatory compliance (e.g., HIPAA, GDPR). Blockchain's append-only anddistributed characteristics naturally support these needs. GPU acceleration has been proposed tomitigate performance bottlenecks, particularly for real-time applications in emergency and outpatientcare [
+10
+][
+11
+][
+32
+].
+Zhang et al. [
+12
+] and Mettler [
+13
+] have explored blockchain's adaptability in clinical trials and hospitalworkfl ows. Angraal et al. [
+14
+] emphasized the role of distributed ledger technologies in reducing
+Page 4/15
+systemic ineffi ciencies. Meanwhile, Rahmadika and Rhee [
+15
+] provided a taxonomy of healthcareblockchain challenges and design choices, suggesting GPU-accelerated PoW as a future-proof path [
+28
+].
+Methodology
+Our approach involves offl oading PoW computation to a CUDA-enabled GPU. The primary componentsinclude:
+SHA-256 hash function implementation using CUDA kernels.
+Dynamic diffi culty adjustment and nonce search within GPU threads.
+Integration with a lightweight blockchain simulator emulating healthcare records.
+4.1 System Architecture
+The system architecture for the healthcare blockchain platform was designed with scalability, security,and effi ciency in mind. It consists of several key components that work together to ensure seamless andsecure management of healthcare data. Below is a description of the architecture, explaining eachcomponent's role in the system.
+1. Blockchain Layer
+At the core of the system is the blockchain layer, which provides a secure, transparent, and tamper-proofrecord of all healthcare transactions. This layer ensures that all interactions with the healthcare data(such as updates to patient records, diagnoses, treatments, and prescriptions) are stored immutably andcannot be altered once confi rmed.
+Proof of Work (PoW) Consensus Algorithm
+: The system utilizes a CUDA-accelerated Proof of Work(PoW) algorithm to validate transactions on the blockchain. PoW ensures that the blockchain’sdecentralized nature remains intact while confi rming transaction integrity. The use of GPUacceleration through CUDA helps process the transactions faster, reducing latency and improvingscalability.
+Smart Contracts
+: Smart contracts are deployed on the blockchain to automate and enforce rules fordata access and permission. These contracts are executed automatically when predefi nedconditions are met (e.g., access granted to a healthcare provider based on patient consent).
+2. Nodes
+The system architecture includes different types of nodes that represent various entities within thehealthcare ecosystem, each with distinct roles and access levels to the blockchain.
+Page 5/15
+Provider Nodes
+: These nodes represent healthcare providers (doctors, specialists, nurses). Theyhave access to patient records for diagnosis and treatment but are granted permissions only forspecifi c actions, such as adding treatment notes or diagnostic results.
+Patient Nodes
+: These nodes represent individual patients, allowing them to access their medicalrecords and grant or revoke permissions for healthcare providers. Patients have control over theirdata, ensuring compliance with privacy regulations like HIPAA.
+Administrator Nodes
+: These nodes are typically managed by hospital administrators or IT personnel.They have broader access to data for system maintenance, including user management, securityauditing, and managing access permissions.
+Insurance Nodes
+: These nodes represent insurance companies that access specifi c portions of theblockchain to verify claims and treatment histories. They are granted limited access to certainrecords to facilitate billing and insurance claim verifi cation.
+3. Data Layer
+The data layer is where patient health records and transactional data are stored. This layer ensures thatall data added to the blockchain is indexed and available for retrieval while maintaining security andprivacy.
+Medical Records Storage
+: Patient data, including medical history, diagnoses, prescriptions,treatments, and test results, are stored as encrypted records on the blockchain. Data is divided intoblocks and each block is securely linked to the next, forming a chain that ensures data integrity.
+Data Encryption
+: Sensitive medical data is encrypted both in transit and at rest. Encryption ensuresthat only authorized users can access sensitive information, complying with healthcare dataprotection standards like GDPR and HIPAA.
+Data Access and Permissioning
+: The system utilizes a decentralized access control model whereonly those with appropriate permissions (based on role, patient consent, or other criteria) canaccess or modify specifi c data entries. Smart contracts manage and enforce these accesspermissions.
+4. Front-End Layer
+The front-end layer consists of the user interfaces that allow patients, healthcare providers, andadministrators to interact with the system. This layer is built to be intuitive and user-friendly, offeringdifferent interfaces based on user roles.
+Patient Portal
+: Patients can view their medical history, grant or revoke access to healthcareproviders, track treatment progress, and view prescriptions. The portal also allows them to consentto or deny access requests for their data.
+Page 6/15
+Provider Portal
+: Healthcare providers access patient records, add updates, and input new treatmentinformation. Providers can also request consent from patients for accessing sensitive information.
+Administrator Dashboard
+: The dashboard provides administrative oversight, allowing systemmaintenance tasks such as managing user accounts, reviewing system logs, and auditing access tosensitive data.
+5. Security and Privacy Layer
+The security layer is designed to ensure that patient data remains protected against unauthorizedaccess and data tampering. This is achieved through a combination of encryption, authentication, andaccess control measures.
+Encryption
+: All data on the blockchain is encrypted, ensuring that only authorized parties candecrypt and access sensitive information. This is especially crucial for compliance with regulatorystandards such as GDPR, HIPAA, and other healthcare privacy laws.
+Authentication
+: Multi-factor authentication (MFA) is used to ensure that only legitimate users(healthcare providers, administrators, patients, etc.) can access the system. This helps preventunauthorized access to sensitive data.
+Audit Logs
+: The system generates detailed audit logs of all transactions on the blockchain, creatinga transparent record of who accessed or modifi ed data, when, and why. These logs can be reviewedto ensure compliance with regulations and detect potential security breaches.
+6. Communication and Interoperability Layer
+This layer ensures that the system can communicate with external systems, such as Electronic HealthRecords (EHR), insurance systems, and other healthcare databases.
+Interoperability Protocols
+: The platform supports standardized data formats such as HL7, FHIR, andDICOM to ensure compatibility with existing healthcare data systems. This allows for seamlessintegration with other healthcare IT infrastructure.
+APIs and Web Services
+: The system exposes secure APIs for third-party applications (e.g., insurancecompanies, diagnostic labs) to interact with the blockchain in a controlled and secure manner.
+7. Smart Contract Layer
+Smart contracts are integral to automating and securing healthcare data interactions. They enable theexecution of automated processes, such as data sharing, consent management, and transactionvalidation, without requiring a centralized authority.
+Page 7/15
+Consent Management
+: Smart contracts enforce patient consent by allowing patients to specifyexactly who can access their records and under what conditions. This ensures that the healthcaresystem respects patient autonomy and complies with privacy regulations.
+Billing and Insurance Claims
+: Smart contracts are used to automate billing processes, ensuring thatonly valid claims are processed. For example, a smart contract can trigger a payment or claimapproval when a specifi c medical treatment is completed.
+4.2 CUDA Kernel Design
+Each CUDA thread computes a SHA-256 hash by combining a block header with a nonce. A valid block isidentifi ed when the resulting hash falls below a target diffi culty threshold. To optimize memory accessand thread scheduling, we applied shared memory and coalesced access techniques.
+We implemented thread warping and unrolling to minimize divergence in execution paths. Thissignifi cantly reduced idle GPU cycles and maximized utilization. Performance tuning was conductediteratively to determine optimal block and grid sizes.
+4.3 Security Implications
+GPU acceleration does not inherently compromise blockchain security. Our CUDA-based approachpreserves cryptographic integrity while introducing layers of rate-limiting to prevent denial-of-serviceattacks. Consensus is still determined by hash target diffi culty, and the implementation includessafeguards to validate hashes independently on CPU before adding blocks.
+5. Experimental Setup
+5.1 Hardware Environment
+CPU: Intel Core i7-12700K
+GPU: NVIDIA RTX 3080
+RAM: 32 GB DDR4
+OS: Ubuntu 22.04 LTS [
+28
+–
+32
+]
+5.2 Test Dataset
+The test dataset used in this study was designed to simulate medical transactions typically found inhospital settings. These simulated medical records closely mirror the types of interactions that occurwithin healthcare environments, particularly focusing on patient data access, treatment updates, andadministrative activities. The goal was to replicate a realistic data fl ow that could be expected in a city-scale healthcare blockchain network.
+Dataset Composition
+:
+Page 8/15
+Patient Information
+:
+Each record represents an individual patient and includes key demographic details such asname, date of birth, medical history, and contact information.
+Data on allergies, pre-existing conditions, and past treatments are also included to simulate amore comprehensive medical profi le.
+Medical Events
+:
+Record Creation
+: Simulated instances of patient registration in the system, including theaddition of medical records, diagnoses, and medical imaging (e.g., X-rays, MRIs).
+Prescription Tracking
+: Data on prescriptions issued by healthcare providers, including details ofmedications, dosages, and dispensing pharmacies.
+Diagnostic Data
+: Records related to diagnostic test results, such as blood tests, imagingreports, and lab results.
+Treatment Updates
+: Any changes in treatment plans, including surgical procedures, therapies,and physician notes.
+Access Permissions
+: Simulation of events where different healthcare providers (e.g., doctors,nurses, administrative staff) access or modify medical records, along with updates on thepermissions granted or revoked.
+Event Timestamps and Audit Trails
+:
+Every transaction within the dataset is timestamped to simulate the temporal sequence ofevents. This includes actions such as record updates, access permission changes, and audittrails tracking which users performed each action.
+Blockchain's append-only nature was leveraged to track these actions and ensure an immutablelog, providing an auditable trail of all interactions.
+Insurance and Billing
+:
+Data related to insurance claim submissions and approvals were incorporated. This includesthe interaction between hospitals, insurance providers, and patients for billing purposes, andthe approval or rejection of medical claims.
+The dataset also included mock medical bills, with corresponding codes for treatments andprocedures, to simulate the real-world integration of healthcare data and insurance claims.
+Volume of Data
+:
+To ensure that the blockchain system can handle substantial transaction volumes, the dataset wasdesigned to include interactions across several hundred simulated patients. Each patient’s data
+Page 9/15
+included multiple treatment events, diagnostic updates, and prescription records, leading to adiverse set of interactions between various medical professionals and healthcare providers.
+Scalability Testing
+:
+The dataset was gradually scaled to refl ect a medium-sized hospital system in a dense urbanenvironment, simulating scenarios where hundreds of concurrent users (healthcare providers,patients, administrators) interact with the blockchain simultaneously.
+Simulated concurrent access scenarios were crucial for testing the effi ciency and performanceof the CUDA-accelerated Proof-of-Work (PoW) algorithm, ensuring that real-time medical datamanagement could be achieved even during high transaction loads.
+Simulated Nodes
+:
+For the purpose of this study, the blockchain simulated multiple nodes corresponding to differententities within a hospital nework, including:
+Provider Nodes
+: Representing individual healthcare providers such as doctors and specialists,each with access to specifi c medical records and the ability to update or append new entries.
+Patient Nodes
+: Representing patients, with limited access to their own medical records and theability to grant or revoke permission to healthcare providers for specifi c record modifi cations.
+Administrative Nodes
+: Representing hospital administrators or IT staff, with broad access to allrecords, but subject to audit logs to ensure transparency and prevent misuse.
+Insurance Nodes
+: Representing insurance companies, which have access to specifi c records forclaim verifi cation but are restricted from viewing or modifying patient treatment data.
+Data Integrity and Privacy
+:
+While the dataset is simulated, it includes realistic data patterns to test the system’s ability tomaintain data integrity. Each transaction or data change within the dataset is cryptographicallysigned to ensure data authenticity and prevent tampering.
+Privacy and Security Features
+:
+The dataset includes mock encryption protocols applied to sensitive patient data, such aspersonal identifi ers and medical histories, ensuring that data privacy is maintained in theblockchain system.
+Specifi c access control models were applied, where only authorized healthcare professionals oradministrators could interact with certain types of medical records, simulating a real-worldhealthcare scenario in which access is heavily regulated.
+By utilizing this structured, diverse, and scalable dataset, we were able to test the blockchain systemunder conditions that refl ect real-world healthcare environments in urban hospitals, ensuring the
+Page 10/15
+system’s ability to handle the complexities of patient data management at scale.
+5.3 Performance Metrics
+We measured:
+Hash rate (MH/s)
+Energy consumption (watts)
+Block validation time (seconds)
+Memory usage (MB)
+Latency per transaction (ms)
+Results
+The CUDA implementation achieved a hash rate up to 15x higher than the CPU baseline. Block validationtimes decreased proportionally, with a corresponding drop in CPU utilization. Energy consumptionremained within sustainable bounds due to GPU effi ciency.
+Table 1
+Performance Comparison GPU_CPU
+Metric
+CPU Baseline
+CUDA-Accelerated
+Hash Rate (MH/s)
+25
+375
+Block Time (seconds)
+12.5
+0.83
+Energy (watts)
+95
+120
+Latency (ms)
+56
+4.5
+Memory (MB)
+2048
+3072
+The improvement in latency is especially critical for emergency medical services where quick recordaccess can impact outcomes.
+Discussion
+The CUDA-based Proof-of-Work (PoW) mechanism demonstrated signifi cant performanceimprovements, which can critically enhance the viability of blockchain applications in healthcare. Byreducing block validation time and latency, the system enables near-instantaneous access to medicalrecords, a vital feature for emergency care and high-throughput environments. Offl oading computationaltasks to the GPU also allows the CPU to manage concurrent processes like data encryption, accesscontrol, and transaction logging—essential for maintaining secure and responsive healthcare systems.
+Page 11/15
+The implications extend beyond technical gains. In cities aiming to develop smart health infrastructure—such as Buenos Aires, Nairobi, and Bangkok—CUDA-accelerated PoW can contribute to the realization ofresponsive and resilient health data ecosystems. When integrated with national ID systems andelectronic medical records, this approach can deliver unifi ed, real-time access to patient informationwhile ensuring regulatory compliance and patient privacy.
+Despite these advantages, practical challenges remain. GPU hardware costs could hinder adoption inunder-resourced healthcare settings. There is also a learning curve for IT personnel unfamiliar withparallel programming or blockchain protocols. Ethical considerations and compliance with healthcareregulations (e.g., HIPAA, GDPR) must be rigorously addressed, particularly as blockchain systems areintroduced into sensitive environments. Furthermore, system interoperability with existing hospitalinformation systems remains a priority for seamless integration.
+Ultimately, CUDA-based PoW offers a promising path forward for secure, scalable, and low-latencyblockchain systems tailored to the demands of urban healthcare networks. Continued development,stakeholder engagement, and pilot deployments will be key to translating these technical gains into real-world health outcomes. allow for practical deployment of secure blockchain in healthcare. Lower blockvalidation time supports near real-time access control and auditing. Moreover, GPU offl oading frees CPUcycles for other critical services such as encryption and logging.
+This solution holds potential for scaling up blockchain deployments in smart cities. Urban centers likeBuenos Aires and Bangkok—with increasing investments in healthtech infrastructure—could benefi t fromGPU-accelerated blockchain layers. Integration with national ID systems and electronic medical recordscan provide unifi ed access while preserving privacy.
+Challenges include:
+Cost of GPU hardware for underfunded healthcare facilities
+Training requirements for IT staff
+Regulatory and ethical oversight
+Ensuring interoperability with existing hospital systems
+Conclusion
+This study presents a CUDA-accelerated PoW framework suitable for healthcare blockchain systems,particularly in urban environments with growing demands for secure, scalable, and effi cient medical datainfrastructure. By leveraging GPU computing through NVIDIA's CUDA architecture, the proposed modeldemonstrated signifi cant improvements in hashing throughput, energy effi ciency, and latency reduction,establishing a compelling case for GPU-based consensus mechanisms in healthcare blockchainnetworks.
+Page 12/15
+Future work will extend this research in several strategic directions. Firstly, a multi-phase pilot programwill be initiated, beginning with deployment in selected hospital clusters in Addis Ababa and Jakarta. Thetimeline includes a six-month preparatory phase for infrastructure assessment, followed by a one-yearimplementation and evaluation cycle. Metrics such as record access time, system uptime, and patientsatisfaction will be tracked to validate the effectiveness of the blockchain layer.
+Secondly, integration with privacy-preserving smart contracts will be prioritized to address regulatorycompliance, especially in jurisdictions adhering to HIPAA and GDPR. Collaborative development withlocal IT partners will ensure that the solution accommodates region-specifi c workfl ows, languagepreferences, and existing electronic medical record (EMR) systems.
+Finally, efforts will focus on long-term sustainability, including training programs for healthcare IT staff,guidelines for cost-effi cient GPU deployment, and modular upgrades to accommodate futureimprovements in CUDA and blockchain protocols.
+This framework sets the foundation for real-time, city-scale, secure, and decentralized healthcareinformation systems. Our implementation paves the way for further enhancements including AI-assisteddiagnostics, automated billing through smart contracts, and dynamic scalability across healthcarenodes.
+Declarations
+Author Contribution
+Seid Mehammed led the research work, contributing signifi cantly to the conceptualization, design, andoverall direction of the study. He was primarily responsible for methodology development, datacollection, analysis, and manuscript writing. Ousman Yesuf contributed to software development,implementation, and technical support during the research process. Both authors participated inmanuscript editing and fi nal approval.Affi liation:Department of Computer Science, Institute ofTechnology, Woldia University, Woldia, EthiopiaCorrespondence:Seid Mehammed:seid.m@wldu.edu.etOusman Yesuf: yesufousman49@gmail.com
+Acknowledgement
+We acknowledge that a preprint of this work has been posted on Research Square.
+References
+1.
+S. Nakamoto, "Bitcoin: A Peer-to-Peer Electronic Cash System," 2008.
+2.
+C. Dwork and M. Naor, "Pricing via Processing or Combatting Junk Mail," in
+Advances in Cryptology– CRYPTO’92
+(LNCS, vol. 740), 1993, pp. 139–147. doi: 10.1007/3-540-48071-4_10.
+Page 13/15
+3.
+J. Sanders and E. Kandrot,
+CUDA by Example: An Introduction to General-Purpose GPUProgramming
+. Addison-Wesley Professional, 2011.
+4.
+K. Iliakis, K. Koliogeorgi, A. Litke, T. Varvarigou, and D. Soudris, "GPU Accelerated Blockchain overKey-Value Database Transactions,"
+IET Blockchain
+, vol. 2, no. 1, pp. 1–12, 2022. doi:10.1049/blc2.12011.
+5.
+A. Azaria, A. Ekblaw, T. Vieira, and A. Lippman, "MedRec: Using Blockchain for Medical Data Accessand Permission Management," in
+Proc. of the 2016 2nd Int. Conf. on Open and Big Data (OBD)
+, 2016.doi: 10.1109/OBD.2016.11.6.
+M. S. Arbabi
+et al.
+, "A Survey on Blockchain for Healthcare: Challenges, Benefi ts, and FutureDirections,"
+IEEE Communications Surveys & Tutorials
+, vol. 25, no. 1, 2023. doi:10.1109/COMST.2022.3224644.
+7.
+H. Sen
+et al.
+, "Blockchain Personal Health Records: A Systematic Review,"
+J. Med. Internet Res.
+, vol.23, no. 4, 2021. doi: 10.2196/25094.8.
+G. Zyskind, O. Nathan, and A. Pentland, "Decentralizing Privacy: Using Blockchain to ProtectPersonal Data," in
+Proc. of IEEE Security & Privacy Workshops (SPW)
+, 2015, pp. 180–184. doi:10.1109/SPW.2015.27.
+9.
+A. Mashatan and J. Biswas, "Blockchain: A Path Toward Healthcare Data Ownership,"
+HealthTechnology (Berlin)
+, vol. 11, no. 4, pp. 889–902, 2021. doi: 10.1007/s12553-021-00563-3.
+10.
+D. Kim and E. Lee, "Effi cient GPU Acceleration for Blockchain Applications,"
+IEEE Access
+, vol. 10, pp.16475–16484, 2022. doi: 10.1109/ACCESS.2022.3148712.
+11.
+L. Zhang
+et al.
+, "Blockchain-Based Data Sharing for Emergency Medical Services,"
+J. Biomed.Inform.
+, vol. 122, 2021. doi: 10.1016/j.jbi.2021.103915.
+12.
+L. Zhang, Y. Li, and W. Wang, "Blockchain-Based Data Sharing for Emergency Medical Services,"
+J.Biomed. Inform.
+, vol. 122, 2021. doi: 10.1016/j.jbi.2021.103915.
+13.
+M. Mettler, "Blockchain technology in healthcare: The revolution starts here," in
+Proc. of the 2016IEEE 18th Int. Conf. on e-Health Networking, Applications and Services (Healthcom)
+, 2016.
+14.
+S. Angraal, M. Krumholz, and H. Schulz, "Blockchain technology: Applications in health care,"
+Circ.:Cardiovascular Quality and Outcomes
+, vol. 10, no. 9, 2017.
+15.
+S. Rahmadika and K.-H. Rhee, "A Survey on Blockchain for Healthcare: Taxonomy and Architecture,Challenges, and Future Directions,"
+IEEE Access
+, vol. 8, 2020.
+16.
+A. Esposito
+et al.
+, "Blockchain in healthcare: Insights on privacy, security, and scalability,"
+FutureGeneration Computer Systems
+, vol. 123, 2021.
+17.
+T. Agbo, Q. Mahmoud, and J. Eklund, "Blockchain technology in healthcare: A systematic review,"
+Healthcare
+, vol. 7, no. 2, 2019.
+18.
+A. Shuaib
+et al.
+, "Energy-effi cient and low-latency consensus for healthcare blockchain,"
+Computersin Biology and Medicine
+, vol. 143, 2022.
+Page 14/15
+19.
+G. Sun
+et al.
+, "Blockchain-based data security in healthcare: A systematic review,"
+J. Biomed. Inform.
+,vol. 124, 2022.
+20.
+M. Casino
+et al.
+, "A systematic literature review of blockchain-based applications: Current status,classifi cation and open issues,"
+Telematics and Informatics
+, vol. 36, 2019.
+21.
+K. Rantos
+et al.
+, "Security and privacy in smart health: The role of blockchain,"
+Informatics
+, vol. 7, no.1, 2020.
+22.
+Y. Yuan and F. Wang, "Blockchain and cryptocurrencies: Model, techniques, and applications,"
+IEEETrans. Syst., Man, Cybern., Syst.
+, vol. 50, no. 1, 2020.
+23.
+S. Wang
+et al.
+, "Blockchain for healthcare: Applications, challenges and future perspectives,"
+IEEETrans. Ind. Inform.
+, vol. 16, no. 6, 2020.
+24.
+M. Conoscenti, A. Vetrò, and J. De Martin, "Blockchain for the Internet of Things: A systematicliterature review," in
+Proc. of the 2016 IEEE/ACS 13th Int. Conf. Computer Systems and Applications
+,2016.
+25.
+M. Hasselgren
+et al.
+, "Towards secure and privacy-preserving eHealth data sharing usingblockchain," in
+Proc. of the 2020 IEEE Int. Conf. Blockchain
+.
+26.
+H. Huang, Y. Yue, and H. Hu, "Data security and privacy protection issues in electronic healthrecords,"
+Int. J. E-Health Med. Commun.
+, vol. 8, no. 4, 2017.
+27.
+A. Bahga and V. Madisetti, "Blockchain platform for industrial Internet of Things,"
+J. Software Eng.Appl.
+, vol. 9, 2016.
+28.
+S. Mehammed and D. Lemma, "Improving the Performance of Proof of Work-Based Bitcoin MiningUsing CUDA,"
+Int. J. Innov. Sci. Res. Technol.
+, vol. 6, no. 12, pp. 1139–1145, 2021. doi:10.5281/zenodo.5910835.ijisrt.com
+29.
+J. Han, T. Peng, and X. Zhang, "A CUDA-based parallel optimization method for SM3 hash algorithm,"
+J. Supercomput.
+, vol. 80, pp. 21431–21446, 2024. doi: 10.1007/s11227-024-06141-6.SpringerLink
+30.
+M. M. M. and J. L. G., "Autotuning Based on Frequency Scaling Toward Energy Effi ciency ofBlockchain Algorithms on Graphics Processing Units,"
+J. Supercomput.
+, vol. 76, pp. 1050–1074,2020. doi: 10.1007/s11227-020-03263-5.SpringerLink
+31.
+L. Jian
+et al.
+, "Parallel data mining techniques on Graphics Processing Unit with Compute Unifi edDevice Architecture (CUDA),"
+J. Supercomput.
+, vol. 64, pp. 942–967, 2013. doi: 10.1007/s11227-011-0672-7.SpringerLink+1ACM Digital Library+1
+32.
+A. M.
+et al.
+, "CPU-GPU co-execution through the exploitation of hybrid technologies via SYCL,"
+J.Supercomput.
+, vol. 81, article no. 452, 2025. doi: 10.1007/s11227-025-06963-y.
+Figures
+Page 15/15
+Figure 1
+propose system Architecture

@@ -1,0 +1,7 @@
+{
+  "domain": "log10_delta",
+  "kind": "blockshuffle",
+  "schema_version": "0.1",
+  "seed": 0,
+  "sha256_q1e-6_first64_deltas": "bc53910544da1f65de314e2cfffcce401f9639f1cd45480c19279e3f6ea555d2"
+}

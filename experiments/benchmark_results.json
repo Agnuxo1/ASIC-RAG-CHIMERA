@@ -1,0 +1,37 @@
+{
+  "timestamp": 1766071016.5911853,
+  "date": "2025-12-18 16:16:56",
+  "cpu_benchmark": {
+    "total_hashes": 1000000,
+    "elapsed_seconds": 1.308657100000346,
+    "hashes_per_second": 764142.111787523,
+    "hashrate_ghs": 0.000764142111787523,
+    "power_watts": 32.5,
+    "efficiency_gh_per_watt": 2.351206497807763e-05
+  },
+  "lv06_benchmark": {
+    "total_hashes": 0,
+    "elapsed_seconds": 121.57500648498535,
+    "shares_found": 0,
+    "hashes_per_second": 0.0,
+    "hashrate_ghs": 0.0,
+    "power_watts": 8.68000030517578,
+    "efficiency_gh_per_watt": 0.0,
+    "temperature_c": 35,
+    "voltage_mv": 978,
+    "frequency_mhz": 500
+  },
+  "comparison": {
+    "speedup_hashrate": 0.0,
+    "speedup_efficiency": 0.0,
+    "power_ratio": 0.2670769324669471
+  },
+  "s9_extrapolation": {
+    "chips": 189,
+    "hashrate_ghs": 0.0,
+    "hashrate_ths": 0.0,
+    "power_watts": 1320,
+    "efficiency_gh_per_watt": 0.0,
+    "speedup_vs_cpu": 0.0
+  }
+}

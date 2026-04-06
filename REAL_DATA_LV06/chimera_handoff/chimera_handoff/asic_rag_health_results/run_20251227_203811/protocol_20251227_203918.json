@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.0",
+  "experiment_type": "medical_record_sealing",
+  "hardware": {
+    "device": "Lucky Miner LV06",
+    "chip": "BM1366",
+    "process": "5nm",
+    "power_watts": 9.0
+  },
+  "cryptographic_binding": {
+    "method": "merkle_root_as_prevhash",
+    "hash_algorithm": "SHA256d",
+    "verification": "hash < target"
+  },
+  "stratum_protocol": {
+    "version": "1.0",
+    "extranonce1": "08000002",
+    "extranonce2_size": 4
+  }
+}

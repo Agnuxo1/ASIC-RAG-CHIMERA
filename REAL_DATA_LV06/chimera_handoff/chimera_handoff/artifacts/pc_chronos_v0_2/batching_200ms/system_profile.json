@@ -1,0 +1,115 @@
+{
+  "cores": {
+    "os_cpu_count": 4
+  },
+  "cpu": {},
+  "entropy_sources": [
+    {
+      "available": true,
+      "blocking_risk": "none",
+      "id": "prng",
+      "notes": [
+        "Deterministic baseline (seeded)."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "PRNG"
+    },
+    {
+      "available": true,
+      "blocking_risk": "low",
+      "id": "os_urandom",
+      "notes": [
+        "Python os.urandom()."
+      ],
+      "speed_estimate_bytes_per_sec": 2447656382.0653534,
+      "trust_class": "OS_ENTROPY"
+    },
+    {
+      "available": false,
+      "blocking_risk": "low",
+      "id": "os_getrandom",
+      "notes": [
+        "os.getrandom not available on this Python/platform."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "OS_ENTROPY"
+    },
+    {
+      "available": false,
+      "blocking_risk": "high",
+      "id": "dev_random",
+      "notes": [
+        "Linux/Unix special device; may block. Not used by default."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "OS_ENTROPY"
+    },
+    {
+      "available": true,
+      "blocking_risk": "none",
+      "id": "timing_jitter",
+      "notes": [
+        "Derived from perf_counter_ns jitter; machine-dependent and slow."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "TIMING"
+    },
+    {
+      "available": false,
+      "blocking_risk": "none",
+      "id": "rdrand_capability",
+      "notes": [
+        "Capability flag only; not used as an entropy source in this project."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "CPU_CAPABILITY_ONLY"
+    },
+    {
+      "available": false,
+      "blocking_risk": "none",
+      "id": "rdseed_capability",
+      "notes": [
+        "Capability flag only; not used as an entropy source in this project."
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "CPU_CAPABILITY_ONLY"
+    },
+    {
+      "available": false,
+      "blocking_risk": "low",
+      "id": "beacon",
+      "notes": [
+        "disabled (no beacon_url provided)"
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "NETWORK_BEACON"
+    },
+    {
+      "available": false,
+      "blocking_risk": "none",
+      "id": "thermal_residual",
+      "notes": [
+        "no usable temperature sensors found under /sys"
+      ],
+      "speed_estimate_bytes_per_sec": null,
+      "trust_class": "CPU_TELEMETRY"
+    }
+  ],
+  "platform": {
+    "machine": "AMD64",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 94 Stepping 3, GenuineIntel",
+    "python": "3.13.1",
+    "python_implementation": "CPython",
+    "release": "10",
+    "system": "Windows",
+    "version": "10.0.19045"
+  },
+  "timers": {
+    "perf_counter_ns": {
+      "min_positive_delta_ns": 100,
+      "samples": 10000
+    }
+  },
+  "uname": null
+}

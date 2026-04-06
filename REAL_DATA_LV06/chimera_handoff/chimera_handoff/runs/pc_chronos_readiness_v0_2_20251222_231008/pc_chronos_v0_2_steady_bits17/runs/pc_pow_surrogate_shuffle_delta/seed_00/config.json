@@ -1,0 +1,7 @@
+{
+  "chronos_only": true,
+  "schema_version": "0.1",
+  "seed": 0,
+  "sigma": 0.0,
+  "source_id": "pc_pow_surrogate_shuffle_delta"
+}

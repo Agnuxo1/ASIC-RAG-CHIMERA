@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1",
+  "source_id": "lv06_silicon_reservoir",
+  "duration_s": 240,
+  "difficulty": 0.0001,
+  "intervention": {
+    "mode": "heartbeat_v4",
+    "hz": 2.4
+  }
+}

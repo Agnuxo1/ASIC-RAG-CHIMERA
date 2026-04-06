@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-12-25T09:58:21.148612",
+  "config": {
+    "shares_per_step": 3,
+    "d_base": 0.5,
+    "narma_steps": 150
+  },
+  "narma10_normal": 0.244532331157461,
+  "correlation_normal": 0.12905871949949313,
+  "narma10_shuffle": 0.2537055886852965,
+  "correlation_shuffle": -0.2723090727578076,
+  "narma10_constant": 0.26716727259755724,
+  "correlation_constant": -0.3625792452757606,
+  "memory_capacity": 0.2694130494813578,
+  "memory_scores": [
+    [
+      1,
+      0.03315305916655689
+    ],
+    [
+      2,
+      0.0012440089023467054
+    ],
+    [
+      3,
+      0.02201062929237557
+    ],
+    [
+      5,
+      0.21300535212007862
+    ]
+  ],
+  "xor_accuracy": 0.5625,
+  "verdicts": {
+    "coupling": {
+      "passed": false,
+      "improvement": 3.6157096796217125,
+      "threshold": 10.0
+    },
+    "entropy": {
+      "passed": false,
+      "improvement": 8.472198417128725,
+      "threshold": 10.0
+    },
+    "correlation": {
+      "passed": false,
+      "normal": 0.12905871949949313,
+      "shuffle": -0.2723090727578076,
+      "diff": -0.14325035325831445
+    },
+    "memory": {
+      "passed": false,
+      "value": 0.2694130494813578,
+      "threshold": 0.3
+    },
+    "nonlinearity": {
+      "passed": true,
+      "value": 0.5625,
+      "threshold": 0.55
+    }
+  },
+  "status": "\u274c NO RC CAPABILITY DEMONSTRATED",
+  "passed": 1,
+  "total": 5
+}

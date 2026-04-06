@@ -1,0 +1,8 @@
+{
+  "ip": "192.168.0.15",
+  "reachable": true,
+  "current_settings": null,
+  "frequency_change_no_reboot": null,
+  "voltage_change_no_reboot": null,
+  "available_endpoints": []
+}

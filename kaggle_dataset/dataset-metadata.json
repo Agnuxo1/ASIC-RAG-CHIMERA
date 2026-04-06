@@ -1,0 +1,43 @@
+{
+  "title": "ASIC-RAG-CHIMERA: Hardware-Accelerated Cryptographic RAG",
+  "id": "franciscoangulo/asic-rag-chimera",
+  "licenses": [
+    {
+      "name": "MIT"
+    }
+  ],
+  "keywords": [
+    "artificial intelligence",
+    "cryptography",
+    "deep learning",
+    "nlp",
+    "python",
+    "rag",
+    "retrieval augmented generation",
+    "hardware acceleration",
+    "bitcoin",
+    "asic",
+    "security"
+  ],
+  "subtitle": "Repurposing Bitcoin Mining ASICs for Secure RAG Systems",
+  "description": "\n# ASIC-RAG-CHIMERA\n\n**Hardware-Accelerated Cryptographic Retrieval-Augmented Generation System**\n\n## Overview\n\nThis dataset contains the complete implementation, benchmarks, and documentation for ASIC-RAG-CHIMERA,\na novel system that repurposes obsolete Bitcoin mining ASIC hardware for cryptographically-secured\nRetrieval-Augmented Generation.\n\n## Key Features\n\n- **SHA-256 Hardware Acceleration**: 51,319 queries per second\n- **AES-256-GCM Encryption**: Military-grade data protection\n- **Merkle Tree Verification**: Blockchain-style integrity guarantees\n- **Comprehensive Testing**: 53/53 tests passing\n\n## Performance Metrics\n\n| Operation | Mean (ms) | P95 (ms) | QPS |\n|-----------|-----------|----------|-----|\n| Tag Lookup | 0.02 | 0.04 | 51,319 |\n| AND Search | 0.04 | 0.06 | 24,373 |\n| Full Pipeline | 47.10 | 51.90 | 21 |\n\n## Contents\n\n- Complete Python source code\n- Benchmark results and performance metrics\n- Academic paper (PDF)\n- Documentation and API reference\n- Example usage and demos\n\n## Citation\n\n```\n@article{angulo2024asicrag,\n  title={ASIC-RAG-CHIMERA: Hardware-Accelerated Cryptographic Framework for Secure RAG},\n  author={Angulo de Lafuente, Francisco},\n  year={2024}\n}\n```\n\n## Links\n\n- GitHub: https://github.com/Agnuxo1/ASIC-RAG-CHIMERA\n- Paper: Included in this dataset\n- Documentation: See README.md\n        ",
+  "isPrivate": false,
+  "resources": [
+    {
+      "path": "README.md",
+      "description": "Project documentation and setup instructions"
+    },
+    {
+      "path": "ASIC-RAG-CHIMERA_Unified.pdf",
+      "description": "Academic paper with full technical details"
+    },
+    {
+      "path": "benchmark_summary.json",
+      "description": "Comprehensive benchmark results"
+    },
+    {
+      "path": "ASIC-RAG-CHIMERA_Complete.zip",
+      "description": "Complete source code package"
+    }
+  ]
+}

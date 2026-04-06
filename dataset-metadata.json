@@ -1,0 +1,17 @@
+{
+  "title": "ASIC-RAG-CHIMERA",
+  "id": "franciscoangulo/asic-rag-chimera",
+  "licenses": [
+    {
+      "name": "MIT"
+    }
+  ],
+  "keywords": [
+    "artificial intelligence",
+    "cryptography",
+    "deep learning",
+    "nlp",
+    "python"
+  ],
+  "resources": []
+}

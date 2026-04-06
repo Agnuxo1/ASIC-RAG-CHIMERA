@@ -1,0 +1,82 @@
+{
+  "config": {
+    "HOST": "0.0.0.0",
+    "PORT": 3333,
+    "SHARE_TIMEOUT": 50.0,
+    "HANDSHAKE_TIMEOUT": 120.0,
+    "WARMUP_SHARES": 5,
+    "D_BASE": 0.5,
+    "D_MIN": 0.1,
+    "D_MAX": 50.0,
+    "NARMA_STEPS": 125,
+    "MEMORY_STEPS": 100,
+    "XOR_STEPS": 100,
+    "TRAIN_RATIO": 0.8,
+    "RIDGE_ALPHAS": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "RANDOM_SEED": 42
+  },
+  "hardware": {
+    "device": "LV06",
+    "protocol": "Sync RC"
+  },
+  "narma10_normal": 0.24301232798330002,
+  "narma10_normal_corr": 0.6402808439258033,
+  "narma10_shuffle": 0.25176099184351314,
+  "narma10_shuffle_corr": -0.21355587618185995,
+  "narma10_constant": 0.26110018249694456,
+  "narma10_constant_corr": -0.26236154241120524,
+  "memory_capacity": 0.13681378877273165,
+  "memory_scores": [
+    [
+      1,
+      0.00046652696895752575
+    ],
+    [
+      2,
+      0.02776329346669179
+    ],
+    [
+      3,
+      0.014639994114303573
+    ],
+    [
+      5,
+      0.09394397422277877
+    ]
+  ],
+  "xor_accuracy": 0.6,
+  "verdicts": {
+    "coupling": {
+      "passed": false,
+      "improvement": 3.474987843093267
+    },
+    "entropy": {
+      "passed": false,
+      "improvement": 6.927553378426382
+    },
+    "memory": {
+      "passed": false,
+      "value": 0.13681378877273165
+    },
+    "nonlinearity": {
+      "passed": false,
+      "value": 0.6
+    }
+  },
+  "status": "\u274c NO RC CAPABILITY DEMONSTRATED",
+  "passed": 0,
+  "total": 4,
+  "_meta": {
+    "run_id": "20251224_173834",
+    "timestamp": "2025-12-24T19:19:07.490770",
+    "log_file": "results\\run_20251224_173834.log",
+    "code_hash": "54cc2d9ae5c3c064"
+  }
+}

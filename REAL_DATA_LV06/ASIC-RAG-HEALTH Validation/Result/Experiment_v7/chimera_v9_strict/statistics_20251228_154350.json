@@ -1,0 +1,20 @@
+{
+  "experiment_date": "2025-12-28T15:43:50.227169",
+  "duration_s": 91.68274331092834,
+  "difficulty": 1000,
+  "total_shares": 1,
+  "python_verified": 0,
+  "verification_failed": 1,
+  "verification_rate": 0.0,
+  "total_records_sealed": 5,
+  "latency_mean_s": 91.68274331092834,
+  "latency_min_s": 91.68274331092834,
+  "latency_max_s": 91.68274331092834,
+  "hashrate_mhs": 46845.97276320866,
+  "efficiency_mhw": 5205.108084800962,
+  "vs_rtx3090_efficiency": 15181.56524733614,
+  "power_watts": 9.0,
+  "version_rolling_enabled": true,
+  "hardware": "Lucky Miner LV06 (BM1366)",
+  "encryption": "AES-256-GCM"
+}

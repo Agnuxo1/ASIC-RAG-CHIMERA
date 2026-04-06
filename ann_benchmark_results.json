@@ -1,0 +1,10 @@
+{
+    "dataset_size": 5000,
+    "query_count": 1000,
+    "qps": 1351.292369258557,
+    "mean_latency_ms": 0.01015640003606677,
+    "p95_latency_ms": 0.014299992471933365,
+    "p99_latency_ms": 0.02210005186498165,
+    "recall": 1.0,
+    "index_build_time_s": 0.07101678848266602
+}

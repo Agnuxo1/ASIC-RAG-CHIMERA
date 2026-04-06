@@ -1,0 +1,7 @@
+{
+  "domain": "log10_delta",
+  "kind": "iaaft",
+  "schema_version": "0.1",
+  "seed": 1,
+  "sha256_q1e-6_first64_deltas": "4079cf888a40121ad68ee01cfae08b7fb4b4957b57b26d7881900e5a73c6ea28"
+}

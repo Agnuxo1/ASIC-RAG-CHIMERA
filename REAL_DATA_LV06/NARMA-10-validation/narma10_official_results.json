@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-12-22 18:20:26",
+  "device": "LV06",
+  "frequency_mhz": 525,
+  "steps": 2000,
+  "shares_per_step": 2,
+  "nrmse": 0.1702248538958506,
+  "best_alpha": 0.01,
+  "failed_steps": 0,
+  "status": "SUCCESS"
+}

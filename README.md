@@ -5,10 +5,14 @@
 ## Badges & Certifications
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17872052.svg)](https://doi.org/10.5281/zenodo.17872052)
-[![CI](https://github.com/Agnuxo1/ASIC-RAG-CHIMERA/workflows/CI/badge.svg)](https://github.com/Agnuxo1/ASIC-RAG-CHIMERA/actions)
+[![CI](https://github.com/Agnuxo1/ASIC-RAG-CHIMERA/actions/workflows/ci.yml/badge.svg)](https://github.com/Agnuxo1/ASIC-RAG-CHIMERA/actions)
 [![Tests](https://img.shields.io/badge/tests-53%20passed-brightgreen)](tests/)
-[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle)](https://kaggle.com/datasets/franciscoangulo/asic-rag-chimera)
-[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/datasets/Agnuxo/ASIC-RAG-CHIMERA)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](tests/)
+[![Kaggle Benchmark](https://img.shields.io/badge/Kaggle-Benchmark-20BEFF?logo=kaggle)](https://kaggle.com/code/franciscoangulo/asic-rag-benchmark)
+[![HF Space](https://img.shields.io/badge/🤗-Live_Demo-yellow)](https://huggingface.co/spaces/Agnuxo/ASIC-RAG-CHIMERA)
+[![W&B](https://img.shields.io/badge/W%26B-dashboard-orange?logo=weightsandbiases)](https://wandb.ai/lareliquia-angulo/asic-rag-chimera)
+[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle)](https://kaggle.com/datasets/franciscoangulo/asic-rag-chimera)
+[![HuggingFace Dataset](https://img.shields.io/badge/🤗-Dataset-yellow)](https://huggingface.co/datasets/Agnuxo/ASIC-RAG-CHIMERA)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -16,7 +20,6 @@
 ![QPS](https://img.shields.io/badge/QPS-51,319-blue)
 ![Hash Throughput](https://img.shields.io/badge/hash-725,358_H/s-blue)
 ![Latency](https://img.shields.io/badge/latency-<50ms-green)
-![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 
 ## Overview
 

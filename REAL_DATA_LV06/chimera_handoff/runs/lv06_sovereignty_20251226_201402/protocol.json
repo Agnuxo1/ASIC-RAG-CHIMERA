@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "source_id": "lv06_silicon_reservoir",
+  "duration_s": 120,
+  "intervention": {
+    "mode": "diff_modulation_v3",
+    "hz": 2.4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "hardware": "Lucky Miner LV06 (BM1366)",
+  "encryption": "AES-256-GCM (PyCryptodome)",
+  "total_records_secured": 50,
+  "shares_captured": 10,
+  "avg_response_time_s": 5.191448520007543,
+  "effective_hashrate_mhs": 11.453246122666668,
+  "efficiency_mhw": 1.2725829025185187,
+  "vs_rtx3090_efficiency": 3.7117001323456793
+}
