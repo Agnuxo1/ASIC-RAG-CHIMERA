@@ -64,7 +64,7 @@ python upload_scripts/upload_to_wandb.py
 - System configuration
 - Paper PDF
 
-**API Key**: `b017394dfb1bfdbcaf122dcd20383d5ac9cb3bae`
+**API Key**: `<REDACTED - use environment variable>`
 
 ---
 
@@ -88,7 +88,7 @@ python upload_scripts/upload_to_zenodo.py
 - Paper PDF
 - README and documentation
 
-**API Key**: `lDYsHSupjRQXYxMAMihKn5lQwamqnsBliy0kwXbdUBg4VmxxuePbXxCpq2iw`
+**API Key**: `<REDACTED - use environment variable>`
 
 **Important**: You must manually publish on Zenodo website to get DOI!
 
@@ -107,7 +107,7 @@ python upload_scripts/upload_to_figshare.py
 # Option B: FTP Upload
 # Host: ftp.figshare.com
 # Username: 5292188
-# Password: $GNJmzWHcQL6XSS
+# Password: <REDACTED - use environment variable>
 ```
 
 **What to upload**:
@@ -117,7 +117,7 @@ python upload_scripts/upload_to_figshare.py
 
 **FTP Credentials**:
 - Username: `5292188`
-- Password: `$GNJmzWHcQL6XSS`
+- Password: `<REDACTED - use environment variable>`
 
 ---
 
@@ -140,7 +140,7 @@ python upload_scripts/upload_to_osf.py
 - Documentation
 - Benchmark results
 
-**API Key**: `KSAPimE65LQJ648xovRICXTSKHSnQT2xRgunNM1QHf6tu3eI81x1Z7b0vHduNJFTFgVKhL`
+**API Key**: `<REDACTED - use environment variable>`
 
 ---
 
@@ -287,11 +287,11 @@ Quick reference for all API keys and credentials:
 
 | Platform | Credential Type | Value |
 |----------|----------------|-------|
-| W&B | API Key | `b017394dfb1bfdbcaf122dcd20383d5ac9cb3bae` |
-| Zenodo | Access Token | `lDYsHSupjRQXYxMAMihKn5lQwamqnsBliy0kwXbdUBg4VmxxuePbXxCpq2iw` |
+| W&B | API Key | `<REDACTED - use environment variable>` |
+| Zenodo | Access Token | `<REDACTED - use environment variable>` |
 | Figshare | FTP Username | `5292188` |
-| Figshare | FTP Password | `$GNJmzWHcQL6XSS` |
-| OSF | Personal Token | `KSAPimE65LQJ648xovRICXTSKHSnQT2xRgunNM1QHf6tu3eI81x1Z7b0vHduNJFTFgVKhL` |
+| Figshare | FTP Password | `<REDACTED - use environment variable>` |
+| OSF | Personal Token | `<REDACTED - use environment variable>` |
 | Kaggle | JSON File | `~/.kaggle/kaggle.json` |
 | HuggingFace | CLI Login | Use `huggingface-cli login` |
 | OpenML | Web Profile | Get from profile page |

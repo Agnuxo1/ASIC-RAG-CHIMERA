@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "ASIC-RAG-CHIMERA: GPU Simulation of a SHA-256 Hash Engine for Cryptographic RAG"
+version: "1.0.0"
+date-released: "2026-04-24"
+authors:
+  - family-names: "Angulo de Lafuente"
+    given-names: "Francisco"
+    email: "lareliquia.angulo@gmail.com"
+license: MIT
+repository-code: "https://github.com/Agnuxo1/ASIC-RAG-CHIMERA"
+url: "https://github.com/Agnuxo1/ASIC-RAG-CHIMERA"
+doi: "10.5281/zenodo.17872052"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.17872052"
+    description: "Zenodo archival DOI for ASIC-RAG-CHIMERA"
+keywords:
+  - retrieval-augmented-generation
+  - sha-256
+  - gpu-simulation
+  - cryptography
+  - rag
+abstract: >
+  ASIC-RAG-CHIMERA is a GPU-based software simulation of a SHA-256 hash
+  engine — inspired by Bitcoin mining ASICs — wired into a
+  Retrieval-Augmented Generation (RAG) pipeline. It is a pure-software
+  research artifact; no real ASIC hardware is required or used. The
+  project also includes a demonstration workflow using synthetic patient
+  records (not for clinical use).

@@ -2,10 +2,13 @@
 """
 Upload ASIC-RAG-CHIMERA to Open Science Framework
 """
+import os
 import requests
 import json
 
-OSF_TOKEN = "KSAPimE65LQJ648xovRICXTSKHSnQT2xRgunNM1QHf6tu3eI81x1Z7b0vHduNJFTFgVKhL"
+OSF_TOKEN = os.environ.get("OSF_TOKEN", "")
+if not OSF_TOKEN:
+    raise SystemExit("OSF_TOKEN environment variable is required")
 BASE_URL = "https://api.osf.io/v2"
 
 headers = {

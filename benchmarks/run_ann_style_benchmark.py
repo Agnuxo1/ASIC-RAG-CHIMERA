@@ -169,9 +169,14 @@ def main():
     # WandB Init
     if not args.no_wandb:
         try:
+            import os
             import wandb
-            # Login with the user provided key
-            wandb.login(key="b017394dfb1bfdbcaf122dcd20383d5ac9cb3bae")
+            # Login via environment variable (do not hardcode API keys)
+            _wandb_key = os.environ.get("WANDB_API_KEY")
+            if _wandb_key:
+                wandb.login(key=_wandb_key)
+            else:
+                wandb.login()
             wandb.init(
                 project="asic-rag-chimera",
                 entity="lareliquia-angulo",

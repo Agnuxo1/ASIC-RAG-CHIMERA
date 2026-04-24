@@ -2,10 +2,13 @@
 """
 Upload ASIC-RAG-CHIMERA to Figshare
 """
+import os
 import requests
 import json
 
-FIGSHARE_TOKEN = "$GNJmzWHcQL6XSS"
+FIGSHARE_TOKEN = os.environ.get("FIGSHARE_TOKEN", "")
+if not FIGSHARE_TOKEN:
+    raise SystemExit("FIGSHARE_TOKEN environment variable is required")
 BASE_URL = "https://api.figshare.com/v2"
 
 headers = {

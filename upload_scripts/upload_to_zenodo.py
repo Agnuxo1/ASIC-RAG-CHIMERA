@@ -2,10 +2,13 @@
 """
 Upload ASIC-RAG-CHIMERA to Zenodo
 """
+import os
 import requests
 import json
 
-ZENODO_TOKEN = "lDYsHSupjRQXYxMAMihKn5lQwamqnsBliy0kwXbdUBg4VmxxuePbXxCpq2iw"
+ZENODO_TOKEN = os.environ.get("ZENODO_TOKEN", "")
+if not ZENODO_TOKEN:
+    raise SystemExit("ZENODO_TOKEN environment variable is required")
 ZENODO_URL = "https://zenodo.org/api/deposit/depositions"
 
 headers = {"Content-Type": "application/json"}

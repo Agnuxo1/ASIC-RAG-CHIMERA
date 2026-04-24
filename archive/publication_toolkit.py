@@ -329,11 +329,16 @@ class PlatformUploadScripts:
 """
 Upload ASIC-RAG-CHIMERA benchmarks to Weights & Biases
 """
+import os
 import wandb
 import json
 
-# Login to W&B
-wandb.login(key="b017394dfb1bfdbcaf122dcd20383d5ac9cb3bae")
+# Login to W&B via environment variable (do not hardcode API keys)
+_wandb_key = os.environ.get("WANDB_API_KEY")
+if _wandb_key:
+    wandb.login(key=_wandb_key)
+else:
+    wandb.login()
 
 # Initialize project
 run = wandb.init(
@@ -408,7 +413,7 @@ Upload ASIC-RAG-CHIMERA to Zenodo
 import requests
 import json
 
-ZENODO_TOKEN = "lDYsHSupjRQXYxMAMihKn5lQwamqnsBliy0kwXbdUBg4VmxxuePbXxCpq2iw"
+ZENODO_TOKEN = os.environ.get("ZENODO_TOKEN", "")
 ZENODO_URL = "https://zenodo.org/api/deposit/depositions"
 
 headers = {"Content-Type": "application/json"}
@@ -474,7 +479,7 @@ Upload ASIC-RAG-CHIMERA to Figshare
 import requests
 import json
 
-FIGSHARE_TOKEN = "$GNJmzWHcQL6XSS"
+FIGSHARE_TOKEN = os.environ.get("FIGSHARE_TOKEN", "")
 BASE_URL = "https://api.figshare.com/v2"
 
 headers = {
@@ -549,7 +554,7 @@ Upload ASIC-RAG-CHIMERA to Open Science Framework
 import requests
 import json
 
-OSF_TOKEN = "KSAPimE65LQJ648xovRICXTSKHSnQT2xRgunNM1QHf6tu3eI81x1Z7b0vHduNJFTFgVKhL"
+OSF_TOKEN = os.environ.get("OSF_TOKEN", "")
 BASE_URL = "https://api.osf.io/v2"
 
 headers = {

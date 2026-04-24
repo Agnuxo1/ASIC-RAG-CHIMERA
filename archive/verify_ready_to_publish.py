@@ -71,23 +71,26 @@ class PublicationReadinessChecker:
             return False
 
     def check_credentials(self):
-        """Check if credentials are configured in scripts"""
+        """Check if credentials are configured via environment variables.
+
+        Previously this method hardcoded API tokens to grep for. That was a
+        security bug — tokens must never live in source. We now check the
+        corresponding environment variables instead.
+        """
         creds = {
-            "W&B": ("upload_scripts/upload_to_wandb.py", "b017394dfb1bfdbcaf122dcd20383d5ac9cb3bae"),
-            "Zenodo": ("upload_scripts/upload_to_zenodo.py", "lDYsHSupjRQXYxMAMihKn5lQwamqnsBliy0kwXbdUBg4VmxxuePbXxCpq2iw"),
-            "Figshare": ("upload_scripts/upload_to_figshare.py", "$GNJmzWHcQL6XSS"),
-            "OSF": ("upload_scripts/upload_to_osf.py", "KSAPimE65LQJ648xovRICXTSKHSnQT2xRgunNM1QHf6tu3eI81x1Z7b0vHduNJFTFgVKhL")
+            "W&B": ("upload_scripts/upload_to_wandb.py", "WANDB_API_KEY"),
+            "Zenodo": ("upload_scripts/upload_to_zenodo.py", "ZENODO_TOKEN"),
+            "Figshare": ("upload_scripts/upload_to_figshare.py", "FIGSHARE_TOKEN"),
+            "OSF": ("upload_scripts/upload_to_osf.py", "OSF_TOKEN"),
         }
 
-        for platform, (script, token_part) in creds.items():
+        for platform, (script, env_var) in creds.items():
             script_path = self.root_dir / script
             if script_path.exists():
-                with open(script_path, 'r', encoding='utf-8') as f:
-                    content = f.read()
-                if token_part[:20] in content:
-                    self.checks.append(f"[OK] Credentials configured: {platform}")
+                if os.environ.get(env_var):
+                    self.checks.append(f"[OK] Credentials configured via {env_var}: {platform}")
                 else:
-                    self.warnings.append(f"[WARNING] Credentials might not be configured: {platform}")
+                    self.warnings.append(f"[WARNING] Env var {env_var} not set for {platform}")
             else:
                 self.errors.append(f"[ERROR] Script missing: {script}")
 

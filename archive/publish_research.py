@@ -16,9 +16,9 @@ import shutil
 import zipfile
 from typing import Dict, Optional
 
-# Configuration - API Keys (Provided by User)
-ZENODO_TOKEN = "lDYsHSupjRQXYxMAMihKn5lQwamqnsBliy0kwXbdUBg4VmxxuePbXxCpq2iw"
-OSF_TOKEN = "KSAPimE65LQJ648xovRICXTSKHSnQT2xRgunNM1QHf6tu3eI81x1Z7b0vHduNJFTFgVKhL"
+# Configuration - API Keys loaded from environment (never hardcode)
+ZENODO_TOKEN = os.environ.get("ZENODO_TOKEN", "")
+OSF_TOKEN = os.environ.get("OSF_TOKEN", "")
 
 # Metadata
 TITLE = "ASIC-RAG-CHIMERA: Consciousness Emergence as Phase Transition in GPU-Native Neuromorphic Computing"

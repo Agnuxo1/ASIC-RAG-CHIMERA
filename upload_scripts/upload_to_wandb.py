@@ -2,11 +2,16 @@
 """
 Upload ASIC-RAG-CHIMERA benchmarks to Weights & Biases
 """
+import os
 import wandb
 import json
 
-# Login to W&B
-wandb.login(key="b017394dfb1bfdbcaf122dcd20383d5ac9cb3bae")
+# Login to W&B via environment variable (do not hardcode API keys)
+_wandb_key = os.environ.get("WANDB_API_KEY")
+if _wandb_key:
+    wandb.login(key=_wandb_key)
+else:
+    wandb.login()
 
 # Initialize project
 run = wandb.init(

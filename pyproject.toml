@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asic-rag-chimera"
+version = "1.0.0"
+description = "GPU simulation of a SHA-256 hash engine inspired by Bitcoin mining ASICs, wired into a RAG pipeline. Pure software; no real ASIC hardware required."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Francisco Angulo de Lafuente", email = "lareliquia.angulo@gmail.com" }
+]
+keywords = ["rag", "sha-256", "cryptography", "simulation", "gpu", "retrieval-augmented-generation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security :: Cryptography",
+]
+dependencies = [
+    "torch>=2.0",
+    "transformers>=4.30",
+    "cryptography>=41",
+    "numpy>=1.24",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+gpu = ["torch>=2.0"]
+wandb = ["wandb>=0.16"]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "build>=1.0",
+    "twine>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Agnuxo1/ASIC-RAG-CHIMERA"
+Repository = "https://github.com/Agnuxo1/ASIC-RAG-CHIMERA"
+Issues = "https://github.com/Agnuxo1/ASIC-RAG-CHIMERA/issues"
+Zenodo = "https://doi.org/10.5281/zenodo.17872052"
+
+[tool.setuptools]
+py-modules = ["asic_rag_chimera"]
+
+[tool.setuptools.packages.find]
+include = ["asic_simulator*", "rag_system*"]
+exclude = ["tests*", "archive*", "benchmarks*", "upload_scripts*", "online_benchmarks*", "publication_*", "experiments*", "huggingface_space*", "REAL_DATA_LV06*", "Real_Data*", "Luck-Miner_LV06*", "kaggle_dataset*", "datahub_upload*", "upload_staging*", "publication_results*", "wandb*", "ASIC-RAG-HEALTH*", "demo_data*", "llm_interface*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

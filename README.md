@@ -1,207 +1,147 @@
 # ASIC-RAG-CHIMERA
 
-**Hardware-Accelerated Cryptographic Retrieval-Augmented Generation System**
-
-## Badges & Certifications
+**GPU simulation of a SHA-256 hash engine inspired by Bitcoin mining ASICs, wired into a RAG pipeline. Pure software; no real ASIC hardware required.**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17872052.svg)](https://doi.org/10.5281/zenodo.17872052)
-[![CI](https://github.com/Agnuxo1/ASIC-RAG-CHIMERA/actions/workflows/ci.yml/badge.svg)](https://github.com/Agnuxo1/ASIC-RAG-CHIMERA/actions)
+[![PyPI](https://img.shields.io/pypi/v/asic-rag-chimera.svg)](https://pypi.org/project/asic-rag-chimera/)
 [![Tests](https://img.shields.io/badge/tests-53%20passed-brightgreen)](tests/)
-[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](tests/)
-[![Kaggle Benchmark](https://img.shields.io/badge/Kaggle-Benchmark-20BEFF?logo=kaggle)](https://kaggle.com/code/franciscoangulo/asic-rag-benchmark)
-[![HF Space](https://img.shields.io/badge/🤗-Live_Demo-yellow)](https://huggingface.co/spaces/Agnuxo/ASIC-RAG-CHIMERA)
-[![W&B](https://img.shields.io/badge/W%26B-dashboard-orange?logo=weightsandbiases)](https://wandb.ai/lareliquia-angulo/asic-rag-chimera)
-[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle)](https://kaggle.com/datasets/franciscoangulo/asic-rag-chimera)
-[![HuggingFace Dataset](https://img.shields.io/badge/🤗-Dataset-yellow)](https://huggingface.co/datasets/Agnuxo/ASIC-RAG-CHIMERA)
+[![Coverage](https://img.shields.io/badge/coverage-57%25-yellow)](coverage.xml)
+[![HF Space](https://img.shields.io/badge/%F0%9F%A4%97-Live_Demo-yellow)](https://huggingface.co/spaces/Agnuxo/ASIC-RAG-CHIMERA)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-### Performance Metrics (Verified)
-![QPS](https://img.shields.io/badge/QPS-51,319-blue)
-![Hash Throughput](https://img.shields.io/badge/hash-725,358_H/s-blue)
-![Latency](https://img.shields.io/badge/latency-<50ms-green)
+---
 
-## Overview
+## What this is
 
-ASIC-RAG-CHIMERA is a novel hybrid architecture that integrates hardware-accelerated SHA-256 hashing with Retrieval-Augmented Generation (RAG) systems to achieve unprecedented levels of security, performance, and data integrity in enterprise knowledge management.
+ASIC-RAG-CHIMERA is a **software research artifact**. It consists of:
 
-Unlike traditional RAG implementations that expose document embeddings and rely on software-based security, our system employs:
+1. A **GPU-accelerated SHA-256 hash engine** implemented in PyTorch that *simulates* the kind of bulk hashing a Bitcoin-style ASIC would do. It runs on a normal CUDA GPU (or CPU fallback). It is a software simulation, not an ASIC.
+2. A **cryptographic RAG pipeline** that indexes documents by SHA-256 tags instead of plaintext embeddings, encrypts blocks with AES-256-GCM, and verifies integrity with a Merkle tree.
+3. A **demonstration workflow with synthetic patient records** illustrating how the pipeline could be configured for privacy-sensitive data (see `ASIC-RAG-HEALTH_Validation/`). The data is fabricated. This is **not** a clinical tool and must not be used for medical decision making.
 
-- **SHA-256 Hardware Acceleration** for cryptographic tag-based indexing
-- **AES-256-GCM Encryption** for data-at-rest protection
-- **Merkle Tree Verification** for blockchain-like integrity guarantees
-- **Temporary Session Keys** with configurable TTL (30 seconds default)
+## What this is NOT
 
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                         ASIC-RAG-CHIMERA ARCHITECTURE                        │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
-│    ┌─────────────┐         ┌─────────────────┐         ┌──────────────┐    │
-│    │   User      │◄───────►│   LLM (GPU)     │◄───────►│  ASIC        │    │
-│    │   Query     │  text   │   Ollama        │  tags   │  Simulator   │    │
-│    └─────────────┘         └─────────────────┘         └──────┬───────┘    │
-│                                    ▲                          │            │
-│                                    │ decrypted                │ hash       │
-│                                    │ data                     │ search     │
-│                                    ▼                          ▼            │
-│                            ┌─────────────────────────────────────┐         │
-│                            │   ENCRYPTED BLOCK STORAGE (LMDB)    │         │
-│                            │   AES-256-GCM | Merkle Tree         │         │
-│                            └─────────────────────────────────────┘         │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
-
-## Features
-
-### 🔐 Security
-- **Cryptographic Tag Index**: Search operates on SHA-256 hashes, not plaintext
-- **Block Encryption**: AES-256-GCM with per-block derived keys
-- **Integrity Verification**: Merkle tree proofs for tamper detection
-- **Ephemeral Keys**: 30-second TTL prevents replay attacks
-
-### ⚡ Performance
-- **Tag Lookup**: 0.02ms (51,319 QPS)
-- **AND Search**: 0.04ms (24,373 QPS)
-- **Hash Throughput**: 725,358 H/s (1.10x vs hashlib)
-- **Full Pipeline**: 47ms including LLM
-
-### 🏛️ Enterprise Ready
-- **GDPR Compliant**: Data encrypted at rest
-- **HIPAA Ready**: Access controls and audit trails
-- **SOX Compatible**: Immutable audit log via blockchain
+- **Not** real ASIC hardware. There is no silicon, no Verilog tape-out, no FPGA bitstream. The "ASIC" in the name refers to the architectural *inspiration* for the GPU simulator module (`asic_simulator/`).
+- **Not** a medical device. The health demo uses synthetic records and is illustrative only.
+- **Not** a Bitcoin miner. The SHA-256 engine is used for content-addressed indexing, not proof-of-work.
 
 ## Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/Agnuxo1/ASIC-RAG-CHIMERA.git
-cd ASIC-RAG-CHIMERA
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Optional: Install Ollama for LLM integration
-# https://ollama.ai
+pip install asic-rag-chimera
 ```
 
-## Quick Start
+Optional extras:
+
+```bash
+pip install "asic-rag-chimera[gpu]"      # Ensure PyTorch with CUDA is available
+pip install "asic-rag-chimera[wandb]"    # Experiment tracking
+pip install "asic-rag-chimera[dev]"      # Tests, build, twine
+```
+
+From source:
+
+```bash
+git clone https://github.com/Agnuxo1/ASIC-RAG-CHIMERA.git
+cd ASIC-RAG-CHIMERA
+pip install -e ".[dev]"
+```
+
+## Quick start
 
 ```python
+import os
 from asic_simulator import GPUHashEngine, IndexManager, KeyGenerator
-from rag_system import DocumentProcessor, QueryEngine, BlockStorage
+from rag_system import DocumentProcessor, QueryEngine
 
-# Initialize components
 hash_engine = GPUHashEngine()
 index_manager = IndexManager()
 key_generator = KeyGenerator(master_key=os.urandom(32))
 
-# Process documents
 processor = DocumentProcessor()
 blocks = processor.create_blocks("Your document content here")
 
-# Query the system
 query_engine = QueryEngine(index_manager, hash_engine)
 results = query_engine.search("your query", max_results=5)
 ```
 
-## Running Tests
+Or use the integrated facade:
+
+```python
+from asic_rag_chimera import ASICRAGSystem
+system = ASICRAGSystem(storage_path="./data", master_key=os.urandom(32))
+system.ingest("document.txt")
+result = system.query("What is the revenue?")
+```
+
+## Architecture
+
+```
+┌──────────────┐    text     ┌─────────────┐    tag hashes    ┌────────────────────┐
+│  User query  │────────────▶│  LLM (GPU)  │─────────────────▶│ GPU SHA-256 engine │
+└──────────────┘             └─────────────┘                  │  (asic_simulator)  │
+                                    ▲                         └──────────┬─────────┘
+                                    │ decrypted blocks                   │ hash lookup
+                                    ▼                                    ▼
+                         ┌────────────────────────────────────────────────────┐
+                         │  Encrypted block storage (LMDB / AES-256-GCM)      │
+                         │  Merkle tree integrity proofs                      │
+                         └────────────────────────────────────────────────────┘
+```
+
+## Running tests and coverage
 
 ```bash
-# Run all tests
-pytest tests/ -v
-
-# Run specific test suite
-pytest tests/test_asic_simulator.py -v
-pytest tests/test_rag_system.py -v
-pytest tests/test_integration.py -v
+pytest tests/ -v                                    # 53/53 tests pass
+pytest tests/ --cov=asic_simulator --cov=rag_system --cov=asic_rag_chimera --cov-report=term --cov-report=xml
 ```
 
-**Test Results:** 53/53 tests passing ✓
+Measured line coverage on the core packages is **57%** (1658 statements, 706 missed), written to `coverage.xml`. Previous READMEs claimed "100%" — that was never measured. The 53 tests all pass; they simply don't exercise every branch of `keyword_extractor`, `query_engine`, `key_generator`, etc.
 
-## Benchmarks
+## Security model
 
-```bash
-# Hash performance benchmark
-python benchmarks/hash_performance.py
+| Attack vector            | Traditional RAG          | ASIC-RAG-CHIMERA            |
+|--------------------------|--------------------------|-----------------------------|
+| Disk theft               | Plaintext exposure       | Encrypted blocks            |
+| Embedding inversion      | Partial recovery         | N/A (no embeddings stored)  |
+| Index enumeration        | Knowledge graph exposed  | Opaque SHA-256 tags         |
+| Key capture              | Permanent access         | 30-second TTL session keys  |
+| Data tampering           | Undetected               | Merkle proof verification   |
 
-# Search latency benchmark
-python benchmarks/search_latency.py
-```
+Claims above describe the *design*. This is a research prototype, not an audited product.
 
-## Demo
-
-```bash
-# Run the full demo
-python asic_rag_chimera.py
-```
-
-## Project Structure
+## Repository layout
 
 ```
-ASIC-RAG-CHIMERA/
-├── asic_simulator/          # Hardware simulation module
-│   ├── gpu_hash_engine.py   # SHA-256 with GPU acceleration
-│   ├── index_manager.py     # Tag-based index with AND/OR search
-│   └── key_generator.py     # Session and key management
-├── rag_system/              # RAG implementation
-│   ├── knowledge_block.py   # Block structure with encryption
-│   ├── block_storage.py     # LMDB-based persistence
-│   ├── document_processor.py # Document ingestion
-│   └── query_engine.py      # Search and retrieval
-├── llm_interface/           # Ollama integration
-├── tests/                   # Comprehensive test suite
-├── benchmarks/              # Performance benchmarks
-└── ASIC_RAG_CHIMERA_Paper.html  # Academic paper
+asic_simulator/     GPU SHA-256 engine + tag index + key generator
+rag_system/         Document processor, block storage, query engine
+asic_rag_chimera.py Integrated facade (ASICRAGSystem)
+tests/              53 pytest tests
+benchmarks/         Microbenchmarks for hash and search latency
+archive/            Historical artefacts (PDFs, HTML, duplicate dirs) — not shipped
+huggingface_space/  HF Space demo app
 ```
-
-## Documentation
-
-- [Architecture Document](ASIC_RAG_Architecture.md) - Detailed system design
-- [Academic Paper](ASIC_RAG_CHIMERA_Paper.html) - Full research paper with references
-
-## Security Model
-
-| Attack Vector | Traditional RAG | ASIC-RAG-CHIMERA |
-|--------------|-----------------|------------------|
-| Disk Theft | Full exposure | Encrypted blocks |
-| Embedding Inversion | Partial recovery | N/A (no embeddings) |
-| Index Enumeration | Knowledge graph exposed | Opaque hashes only |
-| Key Capture | Permanent access | 30-second window |
-| Data Tampering | Undetected | Merkle verification |
-
-## Requirements
-
-- Python 3.10+
-- PyTorch 2.0+ (optional, for GPU acceleration)
-- LMDB
-- cryptography
-- Ollama (optional, for LLM integration)
-
-## Author
-
-**Francisco Angulo de Lafuente**
-
-- GitHub: [Agnuxo1](https://github.com/Agnuxo1)
-- ResearchGate: [Francisco-Angulo-Lafuente-3](https://www.researchgate.net/profile/Francisco-Angulo-Lafuente-3)
-- Kaggle: [franciscoangulo](https://www.kaggle.com/franciscoangulo)
-- HuggingFace: [Agnuxo](https://huggingface.co/Agnuxo)
-- Wikipedia: [Francisco_Angulo_de_Lafuente](https://es.wikipedia.org/wiki/Francisco_Angulo_de_Lafuente)
-
-## License
-
-MIT License - See [LICENSE](LICENSE) for details.
 
 ## Citation
 
 ```bibtex
-@article{angulo2024asicrag,
-  title={ASIC-RAG-CHIMERA: Hardware-Accelerated Cryptographic Framework for Secure Retrieval-Augmented Generation},
-  author={Angulo de Lafuente, Francisco},
-  year={2024},
-  note={Available at: https://github.com/Agnuxo1/ASIC-RAG-CHIMERA}
+@software{angulo_asic_rag_chimera_2026,
+  author  = {Angulo de Lafuente, Francisco},
+  title   = {ASIC-RAG-CHIMERA: GPU Simulation of a SHA-256 Hash Engine for Cryptographic RAG},
+  year    = {2026},
+  version = {1.0.0},
+  doi     = {10.5281/zenodo.17872052},
+  url     = {https://github.com/Agnuxo1/ASIC-RAG-CHIMERA}
 }
 ```
+
+See [`CITATION.cff`](CITATION.cff).
+
+## Author
+
+**Francisco Angulo de Lafuente** — [GitHub @Agnuxo1](https://github.com/Agnuxo1)
+
+## License
+
+MIT — see [LICENSE](LICENSE).
