@@ -551,7 +551,7 @@ if __name__ == "__main__":
     
     # Create generator with master key
     master_key = SecureKeyDerivation.derive_master_key(
-        password="demo_password",
+        password=os.environ.get("ASIC_RAG_DEMO_PASSWORD", "change-me-for-demo-only"),
         salt=SecureKeyDerivation.generate_salt()
     )
     

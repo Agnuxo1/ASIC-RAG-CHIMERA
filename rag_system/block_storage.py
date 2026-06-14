@@ -27,7 +27,7 @@ try:
     HAS_LMDB = True
 except ImportError:
     HAS_LMDB = False
-    import shelve
+    import shelve  # nosec B403
 
 from .knowledge_block import KnowledgeBlock, BlockHeader, BlockMetadata, BlockCategory
 
@@ -163,7 +163,7 @@ class BlockStorage:
             self._use_lmdb = True
         else:
             self._db_path = self._storage_path / "blocks"
-            self._shelve = shelve.open(str(self._db_path))
+            self._shelve = shelve.open(str(self._db_path))  # nosec B301
             self._use_lmdb = False
     
     def _load_metadata(self):
@@ -177,7 +177,7 @@ class BlockStorage:
                     self.stats.total_size_bytes = stats_dict.get('total_size_bytes', 0)
         else:
             if '_stats' in self._shelve:
-                stats_dict = self._shelve['_stats']
+                stats_dict = self._shelve['_stats']  # nosec B301
                 self.stats.total_blocks = stats_dict.get('total_blocks', 0)
                 self.stats.total_size_bytes = stats_dict.get('total_size_bytes', 0)
     

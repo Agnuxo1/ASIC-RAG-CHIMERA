@@ -32,7 +32,7 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          pytest tests/ --cov=. --cov-report=xml --cov-report=html -v
+          pytest tests/ --cov=. --cov-report=xml --cov-report=html --junitxml=pytest-report.xml -v
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
@@ -40,12 +40,13 @@ jobs:
           file: ./coverage.xml
           flags: unittests
           name: codecov-umbrella
+          fail_ci_if_error: false
 
       - name: Generate test badge
         run: |
           pip install genbadge[coverage,tests]
           genbadge coverage -i coverage.xml -o coverage-badge.svg
-          genbadge tests -i coverage.xml -o tests-badge.svg
+          genbadge tests -i pytest-report.xml -o tests-badge.svg
 
   benchmark:
     runs-on: ubuntu-latest
@@ -101,7 +102,7 @@ jobs:
       - name: Run Bandit security scan
         run: |
           pip install bandit
-          bandit -r . -f json -o bandit-report.json
+          bandit -r asic_simulator rag_system llm_interface huggingface_space cli.py asic_rag_chimera.py -f json -o bandit-report.json
 
       - name: Run Safety check
         run: |

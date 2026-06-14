@@ -419,8 +419,8 @@ class DocumentProcessor:
                 for match in re.finditer(rb'\(([^)]+)\)', content):
                     try:
                         text_parts.append(match.group(1).decode('utf-8', errors='ignore'))
-                    except:
-                        pass
+                    except UnicodeDecodeError:
+                        continue
                 return ' '.join(text_parts) if text_parts else f"[PDF: {path.name}]"
         except Exception:
             return f"[PDF: {path.name}]"

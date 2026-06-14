@@ -32,6 +32,7 @@ class ModelConfig:
     use_4bit: bool = True
     use_flash_attention: bool = True
     trust_remote_code: bool = True
+    model_revision: str = "main"
     enable_thinking: bool = True  # Qwen3 thinking mode
 
 
@@ -93,6 +94,7 @@ class QwenLoader:
             # Load tokenizer
             self.tokenizer = AutoTokenizer.from_pretrained(
                 self.config.model_name,
+                revision=self.config.model_revision,
                 trust_remote_code=self.config.trust_remote_code
             )
             
@@ -121,12 +123,13 @@ class QwenLoader:
             if self.config.use_flash_attention and self._device == "cuda":
                 try:
                     load_kwargs["attn_implementation"] = "flash_attention_2"
-                except:
-                    pass
+                except RuntimeError as exc:
+                    warnings.warn(f"Flash attention disabled: {exc}", RuntimeWarning)
             
             # Load model
             self.model = AutoModelForCausalLM.from_pretrained(
                 self.config.model_name,
+                revision=self.config.model_revision,
                 **load_kwargs
             )
             
@@ -363,8 +366,8 @@ class QwenLoader:
             import torch
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
-        except:
-            pass
+        except RuntimeError as exc:
+            warnings.warn(f"Unable to clear CUDA cache: {exc}", RuntimeWarning)
 
 
 class MockQwenLoader:
