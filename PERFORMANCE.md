@@ -1,5 +1,5 @@
 # ASIC-RAG-CHIMERA Performance Report
-Generated: Sun Sep 13 02:52:26 UTC 2026
+Generated: Mon Sep 14 03:06:34 UTC 2026
 
 Running hashlib benchmark...
 Running ASIC simulator benchmark...
@@ -11,12 +11,12 @@ HASH BENCHMARK RESULTS
 ================================================================================
 Implementation              Iterations   Total (ms)    Mean (µs)           H/sec
 --------------------------------------------------------------------------------
-hashlib (Python)                10,000         7.19         0.62       1,391,447
-ASIC Simulator                  10,000        10.49         1.05       1,591,759
+hashlib (Python)                10,000         5.40         0.47       1,853,417
+ASIC Simulator                  10,000         7.98         0.80       2,122,802
 --------------------------------------------------------------------------------
 
 Speedup vs baseline (hashlib):
-  ASIC Simulator: 1.14x
+  ASIC Simulator: 1.15x
 Setting up benchmark with 10000 documents...
   Index size: 105 tags
   Merkle tree: 10000 leaves
@@ -31,9 +31,9 @@ SEARCH LATENCY BENCHMARK RESULTS
 ====================================================================================================
 Operation                         Mean (ms)     P50 (ms)     P95 (ms)     P99 (ms)          QPS
 ----------------------------------------------------------------------------------------------------
-Tag Lookup                           0.0180       0.0160       0.0375       0.0450       55,567
-AND Search (3 tags)                  0.0363       0.0348       0.0492       0.0553       27,524
-OR Search (3 tags)                   1.3982       1.3432       1.7436       1.9527          715
-Merkle Verification                  5.3264       5.3040       5.3972       5.5820          188
-Full Query Pipeline                  5.5156       5.4894       5.6308       6.0101          181
+Tag Lookup                           0.0157       0.0143       0.0263       0.0392       63,565
+AND Search (3 tags)                  0.0337       0.0324       0.0459       0.0527       29,640
+OR Search (3 tags)                   1.5874       1.5317       1.9606       2.1703          630
+Merkle Verification                  3.6822       3.6747       3.7319       3.8388          272
+Full Query Pipeline                  3.8198       3.8107       3.9056       3.9744          262
 ----------------------------------------------------------------------------------------------------
