@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,8 @@ version = "1.0.0"
 description = "GPU simulation of a SHA-256 hash engine inspired by Bitcoin mining ASICs, wired into a RAG pipeline. Pure software; no real ASIC hardware required."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
     { name = "Francisco Angulo de Lafuente", email = "lareliquia.angulo@gmail.com" }
 ]
@@ -16,7 +17,6 @@ keywords = ["rag", "sha-256", "cryptography", "simulation", "gpu", "retrieval-au
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
@@ -53,9 +53,10 @@ Zenodo = "https://doi.org/10.5281/zenodo.17872052"
 py-modules = ["asic_rag_chimera"]
 
 [tool.setuptools.packages.find]
-include = ["asic_simulator*", "rag_system*"]
-exclude = ["tests*", "archive*", "benchmarks*", "upload_scripts*", "online_benchmarks*", "publication_*", "experiments*", "huggingface_space*", "REAL_DATA_LV06*", "Real_Data*", "Luck-Miner_LV06*", "kaggle_dataset*", "datahub_upload*", "upload_staging*", "publication_results*", "wandb*", "ASIC-RAG-HEALTH*", "demo_data*", "llm_interface*"]
+include = ["asic_simulator*", "rag_system*", "llm_interface*"]
+exclude = ["tests*", "archive*", "benchmarks*", "upload_scripts*", "online_benchmarks*", "publication_*", "experiments*", "huggingface_space*", "REAL_DATA_LV06*", "Real_Data*", "Luck-Miner_LV06*", "kaggle_dataset*", "datahub_upload*", "upload_staging*", "publication_results*", "wandb*", "ASIC-RAG-HEALTH*", "demo_data*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+
